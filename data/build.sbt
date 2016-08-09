@@ -19,6 +19,7 @@ name := "apache-predictionio-data"
 
 libraryDependencies ++= Seq(
   "com.github.nscala-time" %% "nscala-time"    % "2.6.0",
+  "com.google.guava"        % "guava"            % "19.0",
   "commons-codec"           % "commons-codec"  % "1.9",
   "io.spray"               %% "spray-can"      % "1.3.3",
   "io.spray"               %% "spray-routing"  % "1.3.3",
@@ -46,12 +47,13 @@ libraryDependencies ++= Seq(
   "org.elasticsearch"       % "elasticsearch"  % elasticsearchVersion.value,
   "org.json4s"             %% "json4s-native"  % json4sVersion.value,
   "org.json4s"             %% "json4s-ext"     % json4sVersion.value,
-  "org.postgresql"          % "postgresql"     % "9.4-1204-jdbc41",
   "org.scalatest"          %% "scalatest"      % "2.1.7" % "test",
-  "org.scalikejdbc"        %% "scalikejdbc"    % "2.3.5",
   "org.slf4j"               % "slf4j-log4j12"  % "1.7.18",
-  "org.spark-project.akka" %% "akka-actor"     % "2.3.4-spark",
+  "org.postgresql"          % "postgresql"     % "9.4.1209",
+  "org.scalikejdbc"        %% "scalikejdbc"    % "2.3.2",
+  "com.typesafe.akka"      %% "akka-actor"     % akkaVersion.value,
   "org.specs2"             %% "specs2"         % "2.3.13" % "test")
+
 
 parallelExecution in Test := false
 

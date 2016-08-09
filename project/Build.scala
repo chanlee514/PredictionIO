@@ -18,6 +18,14 @@
 import sbt._
 import Keys._
 
+case class Profile(
+  name: String,
+  scalaVersion: String,
+  sparkVersion: String,
+  hadoopVersion: String,
+  akkaVersion: String,
+  elasticsearchVersion: String)
+
 object PIOBuild extends Build {
   val elasticsearchVersion = SettingKey[String](
     "elasticsearch-version",

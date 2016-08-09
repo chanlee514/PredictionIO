@@ -20,7 +20,7 @@ import sbtassembly.AssemblyPlugin.autoImport._
 name := "apache-predictionio-tools"
 
 libraryDependencies ++= Seq(
-  "com.github.scopt"       %% "scopt"          % "3.2.0",
+  "com.github.scopt"       %% "scopt"          % "3.5.0",
   "io.spray"               %% "spray-can"      % "1.3.3",
   "io.spray"               %% "spray-routing"  % "1.3.3",
   "me.lessis"               % "semverfi_2.10"  % "0.1.3",

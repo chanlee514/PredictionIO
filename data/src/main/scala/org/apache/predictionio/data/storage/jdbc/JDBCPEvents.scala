@@ -21,10 +21,13 @@ package org.apache.predictionio.data.storage.jdbc
 import java.sql.{DriverManager, ResultSet}
 
 import com.github.nscala_time.time.Imports._
-import org.apache.predictionio.data.storage.{DataMap, Event, PEvents, StorageClientConfig}
+import org.apache.predictionio.data.storage.{
+  DataMap, Event, PEvents, StorageClientConfig}
+import org.apache.predictionio.data.SparkVersionDependent
 import org.apache.spark.SparkContext
-import org.apache.spark.rdd.{JdbcRDD, RDD}
-import org.apache.spark.sql.{SQLContext, SaveMode}
+import org.apache.spark.rdd.RDD
+import org.apache.spark.rdd.JdbcRDD
+import org.apache.spark.sql.SaveMode
 import org.json4s.JObject
 import org.json4s.native.Serialization
 import scalikejdbc._
@@ -118,9 +121,8 @@ class JDBCPEvents(client: String, config: StorageClientConfig, namespace: String
   }
 
   def write(events: RDD[Event], appId: Int, channelId: Option[Int])(sc: SparkContext): Unit = {
-    val sqlContext = new SQLContext(sc)
-
-    import sqlContext.implicits._
+    val sqlSession = SparkVersionDependent.sqlSession(sc)
+    import sqlSession.implicits._
 
     val tableName = JDBCUtils.eventTableName(namespace, appId, channelId)
 
@@ -160,7 +162,7 @@ class JDBCPEvents(client: String, config: StorageClientConfig, namespace: String
         , event.prId
         , new java.sql.Timestamp(event.creationTime.getMillis)
         , event.creationTime.getZone.getID)
-    }.toDF(eventTableColumns:_*)
+    }.toDF(eventsColumnNamesInSQL:_*)
 
     // spark version 1.4.0 or higher
     val prop = new java.util.Properties
@@ -168,6 +170,28 @@ class JDBCPEvents(client: String, config: StorageClientConfig, namespace: String
     prop.setProperty("password", config.properties("PASSWORD"))
     eventDF.write.mode(SaveMode.Append).jdbc(client, tableName, prop)
   }
+
+  private val eventsColumnNamesInDF = Seq[String](
+        "id"
+      , "event"
+      , "entityType"
+      , "entityId"
+      , "targetEntityType"
+      , "targetEntityId"
+      , "properties"
+      , "eventTime"
+      , "eventTimeZone"
+      , "tags"
+      , "prId"
+      , "creationTime"
+      , "creationTimeZone")
+
+  // necessary for handling postgres "case-sensitivity"
+  private val eventsColumnNamesInSQL =
+    JDBCUtils.driverType(client) match {
+      case "postgresql" => eventsColumnNamesInDF.map(_.toLowerCase)
+      case _ => eventsColumnNamesInDF
+    }
 
   def delete(eventIds: RDD[String], appId: Int, channelId: Option[Int])(sc: SparkContext): Unit = {
 
