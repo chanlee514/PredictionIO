@@ -26,3 +26,5 @@ quickstartapp/
 .templates-cache
 /vendors
 /docs/manual/source/gallery/template-gallery.html.md
+/tests/pio_tests/engines
+test-reports/

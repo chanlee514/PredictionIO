@@ -52,8 +52,7 @@ class QuickStartTest(BaseTestCase):
   def setUp(self):
     self.log.info("Setting up the engine")
 
-    template_path = pjoin(
-        self.test_context.engine_directory, "recommendation-engine")
+    template_path = "https://github.com/chanlee514/template-scala-parallel-recommendation"
     engine_json_path = pjoin(
         self.test_context.data_directory, "quickstart_test/engine.json")
 
