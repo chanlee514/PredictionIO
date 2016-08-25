@@ -15,12 +15,9 @@
 # limitations under the License.
 #
 
-import os
-import unittest
 import random
-import logging
 from pio_tests.integration import BaseTestCase, AppContext
-from utils import AppEngine, srun, pjoin
+from utils import AppEngine, pjoin
 
 def read_events(file_path):
   RATE_ACTIONS_DELIMITER = "::"
@@ -30,70 +27,63 @@ def read_events(file_path):
       data = line.rstrip('\r\n').split(RATE_ACTIONS_DELIMITER)
       if random.randint(0, 1) == 1:
         events.append( {
-          "event": "rate",
-          "entityType": "user",
-          "entityId": data[0],
-          "targetEntityType": "item",
-          "targetEntityId": data[1],
-          "properties": { "rating" : float(data[2]) } })
+          'event': 'rate',
+          'entityType': 'user',
+          'entityId': data[0],
+          'targetEntityType': 'item',
+          'targetEntityId': data[1],
+          'properties': { 'rating' : float(data[2]) } })
       else:
         events.append({
-          "event": "buy",
-          "entityType": "user",
-          "entityId": data[0],
-          "targetEntityType": "item",
-          "targetEntityId": data[1] })
+          'event': 'buy',
+          'entityType': 'user',
+          'entityId': data[0],
+          'targetEntityType': 'item',
+          'targetEntityId': data[1] })
 
     return events
 
 
-class QuickStartTest(BaseTestCase):
+class ScalaParallelRecommendationTest(BaseTestCase):
 
   def setUp(self):
     self.log.info("Setting up the engine")
-
     template_path = "https://github.com/chanlee514/template-scala-parallel-recommendation"
     engine_json_path = pjoin(
-        self.test_context.data_directory, "quickstart_test/engine.json")
+        self.test_context.data_directory,
+        "scala_parallel_recommendation_test/engine.json")
+    app_context = AppContext(
+        name="MyApp",
+        template=template_path,
+        engine_json_path=engine_json_path)
+    self.app = AppEngine(self.test_context, app_context)
 
     self.training_data_path = pjoin(
         self.test_context.data_directory,
-        "quickstart_test/training_data.txt")
-
-    # downloading training data
-    srun('curl https://raw.githubusercontent.com/apache/spark/master/' \
-            'data/mllib/sample_movielens_data.txt --create-dirs -o {}'
-            .format(self.training_data_path))
-
-    app_context = AppContext(
-        name="MyRecommender",
-        template=template_path,
-        engine_json_path=engine_json_path)
-
-    self.app = AppEngine(self.test_context, app_context)
+        "scala_parallel_recommendation_test/training_data.txt")
 
   def runTest(self):
     self.log.info("Adding a new application")
     self.app.new()
 
     event1 = {
-      "event" : "rate",
-      "entityType" : "user",
-      "entityId" : "u0",
-      "targetEntityType" : "item",
-      "targetEntityId" : "i0",
-      "properties" : {
-        "rating" : 5
+      'event' : 'rate',
+      'entityType' : 'user',
+      'entityId' : 'u0',
+      'targetEntityType' : 'item',
+      'targetEntityId' : 'i0',
+      'properties' : {
+        'rating' : 5
       },
-      "eventTime" : "2014-11-02T09:39:45.618-08:00" }
+      'eventTime' : '2014-11-02T09:39:45.618-08:00' }
 
     event2 = {
-      "event" : "buy",
-      "entityType" : "user",
-      "entityId" : "u1",
-      "targetEntityType" : "item",
-      "targetEntityId" : "i2",
-      "eventTime" : "2014-11-10T12:34:56.123-08:00" }
+      'event' : 'buy',
+      'entityType' : 'user',
+      'entityId' : 'u1',
+      'targetEntityType' : 'item',
+      'targetEntityId' : 'i2',
+      'eventTime' : '2014-11-10T12:34:56.123-08:00' }
 
     self.log.info("Sending two test events")
     self.assertListEqual(
@@ -102,7 +92,7 @@ class QuickStartTest(BaseTestCase):
 
     self.log.info("Checking the number of events stored on the server")
     r = self.app.get_events()
-    self.assertEquals(200, r.status_code)
+    self.assertEqual(200, r.status_code)
     stored_events = r.json()
     self.assertEqual(2, len(stored_events))
 
@@ -114,9 +104,9 @@ class QuickStartTest(BaseTestCase):
 
     self.log.info("Checking the number of events stored on the server after the update")
     r = self.app.get_events(params={'limit': -1})
-    self.assertEquals(200, r.status_code)
+    self.assertEqual(200, r.status_code)
     stored_events = r.json()
-    self.assertEquals(len(new_events) + 2, len(stored_events))
+    self.assertEqual(len(new_events) + 2, len(stored_events))
 
     self.log.info("Building an engine...")
     self.app.build()

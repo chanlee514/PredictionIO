@@ -1,0 +1,2052 @@
+[
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page13",
+    "properties": {
+      "referrerId": "referrer6.com",
+      "sessionId": "0b1deff56ee011e68f3a60f81dab9202",
+      "browser": "Firefox"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i42",
+    "properties": {
+      "sessionId": "0b1deff56ee011e68f3a60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityId": "example.com/page17",
+    "properties": {
+      "referrerId": "referrer3.com",
+      "sessionId": "0b1eb4b86ee011e6909960f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityId": "example.com/page13",
+    "properties": {
+      "sessionId": "0b1eb4b86ee011e6909960f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i32",
+    "properties": {
+      "sessionId": "0b1eb4b86ee011e6909960f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page2",
+    "properties": {
+      "referrerId": "referrer6.com",
+      "sessionId": "0b1eb65c6ee011e6b78e60f81dab9202",
+      "browser": "Safari"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page12",
+    "properties": {
+      "sessionId": "0b1eb65c6ee011e6b78e60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page7",
+    "properties": {
+      "sessionId": "0b1eb65c6ee011e6b78e60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i44",
+    "properties": {
+      "sessionId": "0b1eb65c6ee011e6b78e60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityId": "example.com/page19",
+    "properties": {
+      "referrerId": "referrer8.com",
+      "sessionId": "0b1eb7876ee011e69e4160f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityId": "example.com/page17",
+    "properties": {
+      "sessionId": "0b1eb7876ee011e69e4160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u8",
+    "targetEntityId": "i47",
+    "properties": {
+      "sessionId": "0b1eb7876ee011e69e4160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u8",
+    "targetEntityId": "i44",
+    "properties": {
+      "sessionId": "0b1eb7876ee011e69e4160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page9",
+    "properties": {
+      "referrerId": "referrer2.com",
+      "sessionId": "0b1eb8d16ee011e6863c60f81dab9202",
+      "browser": "Chrome"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page7",
+    "properties": {
+      "sessionId": "0b1eb8d16ee011e6863c60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i20",
+    "properties": {
+      "sessionId": "0b1eb8d16ee011e6863c60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i18",
+    "properties": {
+      "sessionId": "0b1eb8d16ee011e6863c60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page19",
+    "properties": {
+      "referrerId": "referrer6.com",
+      "sessionId": "0b1eba116ee011e6a57160f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page20",
+    "properties": {
+      "sessionId": "0b1eba116ee011e6a57160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page14",
+    "properties": {
+      "sessionId": "0b1eba116ee011e6a57160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i44",
+    "properties": {
+      "sessionId": "0b1eba116ee011e6a57160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityId": "example.com/page5",
+    "properties": {
+      "referrerId": "referrer10.com",
+      "sessionId": "0b1ebb336ee011e6bdbc60f81dab9202",
+      "browser": "Safari"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityId": "example.com/page12",
+    "properties": {
+      "sessionId": "0b1ebb336ee011e6bdbc60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityId": "example.com/page6",
+    "properties": {
+      "sessionId": "0b1ebb336ee011e6bdbc60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u8",
+    "targetEntityId": "i43",
+    "properties": {
+      "sessionId": "0b1ebb336ee011e6bdbc60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityId": "example.com/page4",
+    "properties": {
+      "referrerId": "referrer1.com",
+      "sessionId": "0b1ebc616ee011e6bf5860f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i44",
+    "properties": {
+      "sessionId": "0b1ebc616ee011e6bf5860f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i3",
+    "properties": {
+      "sessionId": "0b1ebc616ee011e6bf5860f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i31",
+    "properties": {
+      "sessionId": "0b1ebc616ee011e6bf5860f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityId": "example.com/page20",
+    "properties": {
+      "referrerId": "referrer8.com",
+      "sessionId": "0b1ebd826ee011e682e060f81dab9202",
+      "browser": "Firefox"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityId": "example.com/page20",
+    "properties": {
+      "sessionId": "0b1ebd826ee011e682e060f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u9",
+    "targetEntityId": "i4",
+    "properties": {
+      "sessionId": "0b1ebd826ee011e682e060f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityId": "example.com/page13",
+    "properties": {
+      "referrerId": "referrer1.com",
+      "sessionId": "0b1ebe8f6ee011e6a66260f81dab9202",
+      "browser": "Chrome"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i44",
+    "properties": {
+      "sessionId": "0b1ebe8f6ee011e6a66260f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityId": "example.com/page10",
+    "properties": {
+      "referrerId": "referrer10.com",
+      "sessionId": "0b1ebf616ee011e6941560f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityId": "example.com/page13",
+    "properties": {
+      "sessionId": "0b1ebf616ee011e6941560f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityId": "i28",
+    "properties": {
+      "sessionId": "0b1ebf616ee011e6941560f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityId": "i32",
+    "properties": {
+      "sessionId": "0b1ebf616ee011e6941560f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityId": "example.com/page5",
+    "properties": {
+      "referrerId": "referrer6.com",
+      "sessionId": "0b1ec0976ee011e6bc3360f81dab9202",
+      "browser": "Firefox"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u8",
+    "targetEntityId": "i27",
+    "properties": {
+      "sessionId": "0b1ec0976ee011e6bc3360f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u8",
+    "targetEntityId": "i28",
+    "properties": {
+      "sessionId": "0b1ec0976ee011e6bc3360f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u8",
+    "targetEntityId": "i1",
+    "properties": {
+      "sessionId": "0b1ec0976ee011e6bc3360f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page13",
+    "properties": {
+      "referrerId": "referrer6.com",
+      "sessionId": "0b1ec1c56ee011e69a9260f81dab9202",
+      "browser": "Chrome"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i24",
+    "properties": {
+      "sessionId": "0b1ec1c56ee011e69a9260f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i34",
+    "properties": {
+      "sessionId": "0b1ec1c56ee011e69a9260f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityId": "example.com/page2",
+    "properties": {
+      "referrerId": "referrer8.com",
+      "sessionId": "0b1ec2c76ee011e6969060f81dab9202",
+      "browser": "Safari"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityId": "example.com/page20",
+    "properties": {
+      "sessionId": "0b1ec2c76ee011e6969060f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityId": "example.com/page6",
+    "properties": {
+      "sessionId": "0b1ec2c76ee011e6969060f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u1",
+    "targetEntityId": "i30",
+    "properties": {
+      "sessionId": "0b1ec2c76ee011e6969060f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u1",
+    "targetEntityId": "i17",
+    "properties": {
+      "sessionId": "0b1ec2c76ee011e6969060f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page7",
+    "properties": {
+      "referrerId": "referrer4.com",
+      "sessionId": "0b1ec4116ee011e6974b60f81dab9202",
+      "browser": "Firefox"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page16",
+    "properties": {
+      "sessionId": "0b1ec4116ee011e6974b60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityId": "i29",
+    "properties": {
+      "sessionId": "0b1ec4116ee011e6974b60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityId": "example.com/page5",
+    "properties": {
+      "referrerId": "referrer4.com",
+      "sessionId": "0b1ec51e6ee011e6af0d60f81dab9202",
+      "browser": "Chrome"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u9",
+    "targetEntityId": "i35",
+    "properties": {
+      "sessionId": "0b1ec51e6ee011e6af0d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u9",
+    "targetEntityId": "i6",
+    "properties": {
+      "sessionId": "0b1ec51e6ee011e6af0d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityId": "example.com/page18",
+    "properties": {
+      "referrerId": "referrer4.com",
+      "sessionId": "0b1ec60f6ee011e6949b60f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i33",
+    "properties": {
+      "sessionId": "0b1ec60f6ee011e6949b60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i45",
+    "properties": {
+      "sessionId": "0b1ec60f6ee011e6949b60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page4",
+    "properties": {
+      "referrerId": "referrer3.com",
+      "sessionId": "0b1ec71c6ee011e69cde60f81dab9202",
+      "browser": "Chrome"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page17",
+    "properties": {
+      "sessionId": "0b1ec71c6ee011e69cde60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page4",
+    "properties": {
+      "sessionId": "0b1ec71c6ee011e69cde60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityId": "i41",
+    "properties": {
+      "sessionId": "0b1ec71c6ee011e69cde60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page6",
+    "properties": {
+      "referrerId": "referrer9.com",
+      "sessionId": "0b1ec8406ee011e6a91560f81dab9202",
+      "browser": "Firefox"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page6",
+    "properties": {
+      "sessionId": "0b1ec8406ee011e6a91560f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page7",
+    "properties": {
+      "sessionId": "0b1ec8406ee011e6a91560f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u2",
+    "targetEntityId": "i21",
+    "properties": {
+      "sessionId": "0b1ec8406ee011e6a91560f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u2",
+    "targetEntityId": "i21",
+    "properties": {
+      "sessionId": "0b1ec8406ee011e6a91560f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page18",
+    "properties": {
+      "referrerId": "referrer2.com",
+      "sessionId": "0b1ec9946ee011e6baeb60f81dab9202",
+      "browser": "Chrome"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page9",
+    "properties": {
+      "sessionId": "0b1ec9946ee011e6baeb60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page20",
+    "properties": {
+      "sessionId": "0b1ec9946ee011e6baeb60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i12",
+    "properties": {
+      "sessionId": "0b1ec9946ee011e6baeb60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i38",
+    "properties": {
+      "sessionId": "0b1ec9946ee011e6baeb60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i42",
+    "properties": {
+      "sessionId": "0b1ec9946ee011e6baeb60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityId": "example.com/page5",
+    "properties": {
+      "referrerId": "referrer6.com",
+      "sessionId": "0b1ecb076ee011e6aa6e60f81dab9202",
+      "browser": "Firefox"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityId": "i15",
+    "properties": {
+      "sessionId": "0b1ecb076ee011e6aa6e60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityId": "i41",
+    "properties": {
+      "sessionId": "0b1ecb076ee011e6aa6e60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page18",
+    "properties": {
+      "referrerId": "referrer10.com",
+      "sessionId": "0b1ecbf56ee011e682e260f81dab9202",
+      "browser": "Safari"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page12",
+    "properties": {
+      "sessionId": "0b1ecbf56ee011e682e260f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page1",
+    "properties": {
+      "sessionId": "0b1ecbf56ee011e682e260f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i9",
+    "properties": {
+      "sessionId": "0b1ecbf56ee011e682e260f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i15",
+    "properties": {
+      "sessionId": "0b1ecbf56ee011e682e260f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i34",
+    "properties": {
+      "sessionId": "0b1ecbf56ee011e682e260f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page7",
+    "properties": {
+      "referrerId": "referrer5.com",
+      "sessionId": "0b1ecd736ee011e6a19960f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i24",
+    "properties": {
+      "sessionId": "0b1ecd736ee011e6a19960f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i40",
+    "properties": {
+      "sessionId": "0b1ecd736ee011e6a19960f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i18",
+    "properties": {
+      "sessionId": "0b1ecd736ee011e6a19960f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page16",
+    "properties": {
+      "referrerId": "referrer6.com",
+      "sessionId": "0b1ece916ee011e68ca160f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page17",
+    "properties": {
+      "sessionId": "0b1ece916ee011e68ca160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page17",
+    "properties": {
+      "sessionId": "0b1ece916ee011e68ca160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u2",
+    "targetEntityId": "i32",
+    "properties": {
+      "sessionId": "0b1ece916ee011e68ca160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityId": "example.com/page11",
+    "properties": {
+      "referrerId": "referrer1.com",
+      "sessionId": "0b1ecfb56ee011e6b73460f81dab9202",
+      "browser": "Firefox"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityId": "example.com/page10",
+    "properties": {
+      "sessionId": "0b1ecfb56ee011e6b73460f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u3",
+    "targetEntityId": "i1",
+    "properties": {
+      "sessionId": "0b1ecfb56ee011e6b73460f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u3",
+    "targetEntityId": "i3",
+    "properties": {
+      "sessionId": "0b1ecfb56ee011e6b73460f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u3",
+    "targetEntityId": "i7",
+    "properties": {
+      "sessionId": "0b1ecfb56ee011e6b73460f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityId": "example.com/page2",
+    "properties": {
+      "referrerId": "referrer1.com",
+      "sessionId": "0b1ed1006ee011e687f960f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityId": "example.com/page7",
+    "properties": {
+      "sessionId": "0b1ed1006ee011e687f960f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u9",
+    "targetEntityId": "i18",
+    "properties": {
+      "sessionId": "0b1ed1006ee011e687f960f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page7",
+    "properties": {
+      "referrerId": "referrer6.com",
+      "sessionId": "0b1ed2056ee011e6a96760f81dab9202",
+      "browser": "Firefox"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u2",
+    "targetEntityId": "i36",
+    "properties": {
+      "sessionId": "0b1ed2056ee011e6a96760f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u2",
+    "targetEntityId": "i20",
+    "properties": {
+      "sessionId": "0b1ed2056ee011e6a96760f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page16",
+    "properties": {
+      "referrerId": "referrer2.com",
+      "sessionId": "0b1ed3076ee011e6851d60f81dab9202",
+      "browser": "Firefox"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page17",
+    "properties": {
+      "sessionId": "0b1ed3076ee011e6851d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i22",
+    "properties": {
+      "sessionId": "0b1ed3076ee011e6851d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i19",
+    "properties": {
+      "sessionId": "0b1ed3076ee011e6851d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page10",
+    "properties": {
+      "referrerId": "referrer8.com",
+      "sessionId": "0b1ed41e6ee011e69fc060f81dab9202",
+      "browser": "Firefox"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i35",
+    "properties": {
+      "sessionId": "0b1ed41e6ee011e69fc060f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i4",
+    "properties": {
+      "sessionId": "0b1ed41e6ee011e69fc060f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page8",
+    "properties": {
+      "referrerId": "referrer5.com",
+      "sessionId": "0b1ed52e6ee011e69b3160f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page16",
+    "properties": {
+      "sessionId": "0b1ed52e6ee011e69b3160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page6",
+    "properties": {
+      "sessionId": "0b1ed52e6ee011e69b3160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i7",
+    "properties": {
+      "sessionId": "0b1ed52e6ee011e69b3160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i41",
+    "properties": {
+      "sessionId": "0b1ed52e6ee011e69b3160f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page15",
+    "properties": {
+      "referrerId": "referrer9.com",
+      "sessionId": "0b1ed6786ee011e6aa6260f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page3",
+    "properties": {
+      "sessionId": "0b1ed6786ee011e6aa6260f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i1",
+    "properties": {
+      "sessionId": "0b1ed6786ee011e6aa6260f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i8",
+    "properties": {
+      "sessionId": "0b1ed6786ee011e6aa6260f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityId": "example.com/page18",
+    "properties": {
+      "referrerId": "referrer1.com",
+      "sessionId": "0b1ed7996ee011e6b18e60f81dab9202",
+      "browser": "Chrome"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u1",
+    "targetEntityId": "i43",
+    "properties": {
+      "sessionId": "0b1ed7996ee011e6b18e60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityId": "example.com/page20",
+    "properties": {
+      "referrerId": "referrer9.com",
+      "sessionId": "0b1ed8806ee011e687c360f81dab9202",
+      "browser": "Safari"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityId": "example.com/page16",
+    "properties": {
+      "sessionId": "0b1ed8806ee011e687c360f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u9",
+    "targetEntityId": "i39",
+    "properties": {
+      "sessionId": "0b1ed8806ee011e687c360f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityId": "example.com/page19",
+    "properties": {
+      "referrerId": "referrer8.com",
+      "sessionId": "0b1ed9856ee011e6a0b960f81dab9202",
+      "browser": "Chrome"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u8",
+    "targetEntityId": "i29",
+    "properties": {
+      "sessionId": "0b1ed9856ee011e6a0b960f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityId": "example.com/page13",
+    "properties": {
+      "referrerId": "referrer3.com",
+      "sessionId": "0b1eda5e6ee011e6b4fe60f81dab9202",
+      "browser": "Chrome"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityId": "example.com/page8",
+    "properties": {
+      "sessionId": "0b1eda5e6ee011e6b4fe60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityId": "example.com/page8",
+    "properties": {
+      "sessionId": "0b1eda5e6ee011e6b4fe60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u3",
+    "targetEntityId": "i18",
+    "properties": {
+      "sessionId": "0b1eda5e6ee011e6b4fe60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u3",
+    "targetEntityId": "i21",
+    "properties": {
+      "sessionId": "0b1eda5e6ee011e6b4fe60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityId": "example.com/page15",
+    "properties": {
+      "referrerId": "referrer6.com",
+      "sessionId": "0b1edbb56ee011e6855460f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i38",
+    "properties": {
+      "sessionId": "0b1edbb56ee011e6855460f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i34",
+    "properties": {
+      "sessionId": "0b1edbb56ee011e6855460f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i26",
+    "properties": {
+      "sessionId": "0b1edbb56ee011e6855460f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page2",
+    "properties": {
+      "referrerId": "referrer7.com",
+      "sessionId": "0b1edcca6ee011e69ef560f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page19",
+    "properties": {
+      "sessionId": "0b1edcca6ee011e69ef560f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page11",
+    "properties": {
+      "sessionId": "0b1edcca6ee011e69ef560f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u2",
+    "targetEntityId": "i36",
+    "properties": {
+      "sessionId": "0b1edcca6ee011e69ef560f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u2",
+    "targetEntityId": "i10",
+    "properties": {
+      "sessionId": "0b1edcca6ee011e69ef560f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityId": "example.com/page5",
+    "properties": {
+      "referrerId": "referrer2.com",
+      "sessionId": "0b1ede216ee011e6911c60f81dab9202",
+      "browser": "Safari"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityId": "example.com/page20",
+    "properties": {
+      "sessionId": "0b1ede216ee011e6911c60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityId": "example.com/page6",
+    "properties": {
+      "sessionId": "0b1ede216ee011e6911c60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityId": "i21",
+    "properties": {
+      "sessionId": "0b1ede216ee011e6911c60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityId": "i43",
+    "properties": {
+      "sessionId": "0b1ede216ee011e6911c60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityId": "i30",
+    "properties": {
+      "sessionId": "0b1ede216ee011e6911c60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityId": "example.com/page8",
+    "properties": {
+      "referrerId": "referrer3.com",
+      "sessionId": "0b1edf916ee011e6911960f81dab9202",
+      "browser": "Chrome"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i17",
+    "properties": {
+      "sessionId": "0b1edf916ee011e6911960f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i39",
+    "properties": {
+      "sessionId": "0b1edf916ee011e6911960f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page10",
+    "properties": {
+      "referrerId": "referrer10.com",
+      "sessionId": "0b1ee08c6ee011e6893060f81dab9202",
+      "browser": "Firefox"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page17",
+    "properties": {
+      "sessionId": "0b1ee08c6ee011e6893060f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page12",
+    "properties": {
+      "sessionId": "0b1ee08c6ee011e6893060f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityId": "i37",
+    "properties": {
+      "sessionId": "0b1ee08c6ee011e6893060f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityId": "i43",
+    "properties": {
+      "sessionId": "0b1ee08c6ee011e6893060f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityId": "example.com/page5",
+    "properties": {
+      "referrerId": "referrer8.com",
+      "sessionId": "0b1ee1de6ee011e6999d60f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i34",
+    "properties": {
+      "sessionId": "0b1ee1de6ee011e6999d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i48",
+    "properties": {
+      "sessionId": "0b1ee1de6ee011e6999d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityId": "i43",
+    "properties": {
+      "sessionId": "0b1ee1de6ee011e6999d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page15",
+    "properties": {
+      "referrerId": "referrer2.com",
+      "sessionId": "0b1ee3706ee011e68f7e60f81dab9202",
+      "browser": "Firefox"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page18",
+    "properties": {
+      "sessionId": "0b1ee3706ee011e68f7e60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityId": "example.com/page6",
+    "properties": {
+      "sessionId": "0b1ee3706ee011e68f7e60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u2",
+    "targetEntityId": "i16",
+    "properties": {
+      "sessionId": "0b1ee3706ee011e68f7e60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u2",
+    "targetEntityId": "i22",
+    "properties": {
+      "sessionId": "0b1ee3706ee011e68f7e60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u2",
+    "targetEntityId": "i37",
+    "properties": {
+      "sessionId": "0b1ee3706ee011e68f7e60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityId": "example.com/page8",
+    "properties": {
+      "referrerId": "referrer1.com",
+      "sessionId": "0b1ee5516ee011e6857f60f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityId": "example.com/page14",
+    "properties": {
+      "sessionId": "0b1ee5516ee011e6857f60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u3",
+    "targetEntityId": "i17",
+    "properties": {
+      "sessionId": "0b1ee5516ee011e6857f60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page20",
+    "properties": {
+      "referrerId": "referrer5.com",
+      "sessionId": "0b1ee64a6ee011e69beb60f81dab9202",
+      "browser": "Chrome"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page11",
+    "properties": {
+      "sessionId": "0b1ee64a6ee011e69beb60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityId": "i14",
+    "properties": {
+      "sessionId": "0b1ee64a6ee011e69beb60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page2",
+    "properties": {
+      "referrerId": "referrer2.com",
+      "sessionId": "0b1ee74c6ee011e6aa9660f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page8",
+    "properties": {
+      "sessionId": "0b1ee74c6ee011e6aa9660f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page16",
+    "properties": {
+      "sessionId": "0b1ee74c6ee011e6aa9660f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i15",
+    "properties": {
+      "sessionId": "0b1ee74c6ee011e6aa9660f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i34",
+    "properties": {
+      "sessionId": "0b1ee74c6ee011e6aa9660f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i33",
+    "properties": {
+      "sessionId": "0b1ee74c6ee011e6aa9660f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page14",
+    "properties": {
+      "referrerId": "referrer3.com",
+      "sessionId": "0b1ee92e6ee011e6b39660f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityId": "example.com/page3",
+    "properties": {
+      "sessionId": "0b1ee92e6ee011e6b39660f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i18",
+    "properties": {
+      "sessionId": "0b1ee92e6ee011e6b39660f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityId": "i36",
+    "properties": {
+      "sessionId": "0b1ee92e6ee011e6b39660f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityId": "example.com/page13",
+    "properties": {
+      "referrerId": "referrer6.com",
+      "sessionId": "0b1eeac06ee011e6ab6d60f81dab9202",
+      "browser": "Chrome"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i33",
+    "properties": {
+      "sessionId": "0b1eeac06ee011e6ab6d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i7",
+    "properties": {
+      "sessionId": "0b1eeac06ee011e6ab6d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityId": "i47",
+    "properties": {
+      "sessionId": "0b1eeac06ee011e6ab6d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page12",
+    "properties": {
+      "referrerId": "referrer4.com",
+      "sessionId": "0b1eebc26ee011e6890c60f81dab9202",
+      "browser": "Safari"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page10",
+    "properties": {
+      "sessionId": "0b1eebc26ee011e6890c60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityId": "i9",
+    "properties": {
+      "sessionId": "0b1eebc26ee011e6890c60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page15",
+    "properties": {
+      "referrerId": "referrer8.com",
+      "sessionId": "0b1eeccf6ee011e6846360f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityId": "example.com/page6",
+    "properties": {
+      "sessionId": "0b1eeccf6ee011e6846360f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityId": "i44",
+    "properties": {
+      "sessionId": "0b1eeccf6ee011e6846360f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityId": "i3",
+    "properties": {
+      "sessionId": "0b1eeccf6ee011e6846360f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityId": "example.com/page7",
+    "properties": {
+      "referrerId": "referrer3.com",
+      "sessionId": "0b1eeeb86ee011e6a04d60f81dab9202",
+      "browser": "Internet Explorer"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "page",
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityId": "example.com/page11",
+    "properties": {
+      "sessionId": "0b1eeeb86ee011e6a04d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityId": "i18",
+    "properties": {
+      "sessionId": "0b1eeeb86ee011e6a04d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityId": "i43",
+    "properties": {
+      "sessionId": "0b1eeeb86ee011e6a04d60f81dab9202"
+    }
+  },
+  {
+    "entityType": "user",
+    "targetEntityType": "item",
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityId": "i6",
+    "properties": {
+      "sessionId": "0b1eeeb86ee011e6a04d60f81dab9202"
+    }
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "id": "default",
+  "description": "Default settings",
+  "engineFactory": "org.template.complementarypurchase.ComplementaryPurchaseEngine",
+  "datasource": {
+    "params" : {
+      "appName": "MyApp"
+    }
+  },
+  "algorithms": [
+    {
+      "name": "algo",
+      "params": {
+        "basketWindow" : 120,
+        "maxRuleLength" : 2,
+        "minSupport": 0.001,
+        "minConfidence": 0.1,
+        "minLift" : 1.0,
+        "minBasketSize" : 2,
+        "maxNumRulesPerCond": 5
+      }
+    }
+  ]
+}

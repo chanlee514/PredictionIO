@@ -1,0 +1,1683 @@
+[
+  {
+    "event": "$set",
+    "entityId": "u1",
+    "entityType": "user"
+  },
+  {
+    "event": "$set",
+    "entityId": "u2",
+    "entityType": "user"
+  },
+  {
+    "event": "$set",
+    "entityId": "u3",
+    "entityType": "user"
+  },
+  {
+    "event": "$set",
+    "entityId": "u4",
+    "entityType": "user"
+  },
+  {
+    "event": "$set",
+    "entityId": "u5",
+    "entityType": "user"
+  },
+  {
+    "event": "$set",
+    "entityId": "u6",
+    "entityType": "user"
+  },
+  {
+    "event": "$set",
+    "entityId": "u7",
+    "entityType": "user"
+  },
+  {
+    "event": "$set",
+    "entityId": "u8",
+    "entityType": "user"
+  },
+  {
+    "event": "$set",
+    "entityId": "u9",
+    "entityType": "user"
+  },
+  {
+    "event": "$set",
+    "entityId": "u10",
+    "entityType": "user"
+  },
+  {
+    "event": "$set",
+    "entityId": "i1",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c5",
+        "c6"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i2",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3",
+        "c5"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i3",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c6",
+        "c5",
+        "c1",
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i4",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c4"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i5",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c5",
+        "c2",
+        "c6"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i6",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c5",
+        "c6",
+        "c4",
+        "c2"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i7",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c2",
+        "c6"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i8",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c6",
+        "c1",
+        "c5",
+        "c4"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i9",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i10",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i11",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c5",
+        "c4",
+        "c6",
+        "c2"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i12",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c2",
+        "c3",
+        "c1",
+        "c4"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i13",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c4",
+        "c2"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i14",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c6",
+        "c4",
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i15",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c5",
+        "c4",
+        "c3",
+        "c6"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i16",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c5",
+        "c2",
+        "c3",
+        "c4"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i17",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i18",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c6",
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i19",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c6"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i20",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c6",
+        "c5"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i21",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3",
+        "c1",
+        "c5"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i22",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c6",
+        "c4",
+        "c1",
+        "c2"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i23",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c4"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i24",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c1",
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i25",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c4",
+        "c1",
+        "c5",
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i26",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c4"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i27",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c5",
+        "c3",
+        "c2"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i28",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i29",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c1"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i30",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c5"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i31",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c2"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i32",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3",
+        "c5",
+        "c6",
+        "c1"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i33",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i34",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3",
+        "c2",
+        "c4"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i35",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c4",
+        "c5",
+        "c6",
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i36",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c5"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i37",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c4",
+        "c2",
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i38",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3",
+        "c5",
+        "c6",
+        "c4"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i39",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c1",
+        "c4",
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i40",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c4"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i41",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c1",
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i42",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3",
+        "c6",
+        "c5",
+        "c4"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i43",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c1",
+        "c5",
+        "c6",
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i44",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i45",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c6",
+        "c4",
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i46",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c2",
+        "c3",
+        "c6"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i47",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3",
+        "c5",
+        "c6"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i48",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c4",
+        "c1",
+        "c5"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i49",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c3",
+        "c5"
+      ]
+    }
+  },
+  {
+    "event": "$set",
+    "entityId": "i50",
+    "entityType": "item",
+    "properties": {
+      "categories": [
+        "c6",
+        "c3"
+      ]
+    }
+  },
+  {
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i16"
+  },
+  {
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i21"
+  },
+  {
+    "event": "buy",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i21"
+  },
+  {
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i12"
+  },
+  {
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i44"
+  },
+  {
+    "event": "buy",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i44"
+  },
+  {
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i28"
+  },
+  {
+    "event": "buy",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i28"
+  },
+  {
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i42"
+  },
+  {
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i7"
+  },
+  {
+    "event": "buy",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i7"
+  },
+  {
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i47"
+  },
+  {
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i39"
+  },
+  {
+    "event": "view",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i49"
+  },
+  {
+    "event": "buy",
+    "entityId": "u1",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i49"
+  },
+  {
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i8"
+  },
+  {
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i3"
+  },
+  {
+    "event": "buy",
+    "entityId": "u2",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i3"
+  },
+  {
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i34"
+  },
+  {
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i13"
+  },
+  {
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i21"
+  },
+  {
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i37"
+  },
+  {
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i12"
+  },
+  {
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i18"
+  },
+  {
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i22"
+  },
+  {
+    "event": "view",
+    "entityId": "u2",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i6"
+  },
+  {
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i37"
+  },
+  {
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i27"
+  },
+  {
+    "event": "buy",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i27"
+  },
+  {
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i3"
+  },
+  {
+    "event": "buy",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i3"
+  },
+  {
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i49"
+  },
+  {
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i10"
+  },
+  {
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i13"
+  },
+  {
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i1"
+  },
+  {
+    "event": "buy",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i1"
+  },
+  {
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i31"
+  },
+  {
+    "event": "buy",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i31"
+  },
+  {
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i40"
+  },
+  {
+    "event": "view",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i33"
+  },
+  {
+    "event": "buy",
+    "entityId": "u3",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i33"
+  },
+  {
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i16"
+  },
+  {
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i3"
+  },
+  {
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i3"
+  },
+  {
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i49"
+  },
+  {
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i49"
+  },
+  {
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i45"
+  },
+  {
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i33"
+  },
+  {
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i33"
+  },
+  {
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i13"
+  },
+  {
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i13"
+  },
+  {
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i28"
+  },
+  {
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i37"
+  },
+  {
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i37"
+  },
+  {
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i4"
+  },
+  {
+    "event": "buy",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i4"
+  },
+  {
+    "event": "view",
+    "entityId": "u4",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i1"
+  },
+  {
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i9"
+  },
+  {
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i9"
+  },
+  {
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i17"
+  },
+  {
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i17"
+  },
+  {
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i35"
+  },
+  {
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i35"
+  },
+  {
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i31"
+  },
+  {
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i4"
+  },
+  {
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i4"
+  },
+  {
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i23"
+  },
+  {
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i23"
+  },
+  {
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i15"
+  },
+  {
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i13"
+  },
+  {
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i8"
+  },
+  {
+    "event": "buy",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i8"
+  },
+  {
+    "event": "view",
+    "entityId": "u5",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i48"
+  },
+  {
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i16"
+  },
+  {
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i16"
+  },
+  {
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i18"
+  },
+  {
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i18"
+  },
+  {
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i40"
+  },
+  {
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i40"
+  },
+  {
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i34"
+  },
+  {
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i34"
+  },
+  {
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i47"
+  },
+  {
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i47"
+  },
+  {
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i28"
+  },
+  {
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i28"
+  },
+  {
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i4"
+  },
+  {
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i31"
+  },
+  {
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i31"
+  },
+  {
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i21"
+  },
+  {
+    "event": "buy",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i21"
+  },
+  {
+    "event": "view",
+    "entityId": "u6",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i1"
+  },
+  {
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i21"
+  },
+  {
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i11"
+  },
+  {
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i50"
+  },
+  {
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i50"
+  },
+  {
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i5"
+  },
+  {
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i23"
+  },
+  {
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i25"
+  },
+  {
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i25"
+  },
+  {
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i42"
+  },
+  {
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i42"
+  },
+  {
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i45"
+  },
+  {
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i45"
+  },
+  {
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i38"
+  },
+  {
+    "event": "view",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i20"
+  },
+  {
+    "event": "buy",
+    "entityId": "u7",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i20"
+  },
+  {
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i37"
+  },
+  {
+    "event": "buy",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i37"
+  },
+  {
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i12"
+  },
+  {
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i3"
+  },
+  {
+    "event": "buy",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i3"
+  },
+  {
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i24"
+  },
+  {
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i30"
+  },
+  {
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i39"
+  },
+  {
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i42"
+  },
+  {
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i35"
+  },
+  {
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i25"
+  },
+  {
+    "event": "view",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i41"
+  },
+  {
+    "event": "buy",
+    "entityId": "u8",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i41"
+  },
+  {
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i16"
+  },
+  {
+    "event": "buy",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i16"
+  },
+  {
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i14"
+  },
+  {
+    "event": "buy",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i14"
+  },
+  {
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i35"
+  },
+  {
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i18"
+  },
+  {
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i45"
+  },
+  {
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i38"
+  },
+  {
+    "event": "buy",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i38"
+  },
+  {
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i5"
+  },
+  {
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i28"
+  },
+  {
+    "event": "buy",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i28"
+  },
+  {
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i15"
+  },
+  {
+    "event": "view",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i43"
+  },
+  {
+    "event": "buy",
+    "entityId": "u9",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i43"
+  },
+  {
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i47"
+  },
+  {
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i21"
+  },
+  {
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i21"
+  },
+  {
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i37"
+  },
+  {
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i37"
+  },
+  {
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i35"
+  },
+  {
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i35"
+  },
+  {
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i7"
+  },
+  {
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i38"
+  },
+  {
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i38"
+  },
+  {
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i1"
+  },
+  {
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i1"
+  },
+  {
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i31"
+  },
+  {
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i10"
+  },
+  {
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i10"
+  },
+  {
+    "event": "view",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i16"
+  },
+  {
+    "event": "buy",
+    "entityId": "u10",
+    "targetEntityType": "item",
+    "entityType": "user",
+    "targetEntityId": "i16"
+  }
+]
