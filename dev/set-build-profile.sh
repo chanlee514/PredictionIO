@@ -28,5 +28,5 @@ if [[ "$#" -ne 1 ]]; then
 fi
 
 set -a
-eval `sbt --warn --error 'set showSuccess := false' -Dbuild.profile=$1 printProfile`
+eval `sbt --warn --error 'set showSuccess := false' -Dbuild.profile=$1 printProfile | grep '.*_VERSION=.*'`
 set +a
