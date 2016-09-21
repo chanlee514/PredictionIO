@@ -61,17 +61,13 @@ class BasicAppUsecases(BaseTestCase):
   def setUp(self):
     random.seed(3)
     self.log.info("Setting up the engine")
-
-    template_path = pjoin(
-        self.test_context.engine_directory, "recommendation-engine")
+    template_path = "https://github.com/chanlee514/template-scala-parallel-recommendation"
     engine_json_path = pjoin(
-        self.test_context.data_directory, "quickstart_test/engine.json")
-
+        self.test_context.data_directory, "scala_parallel_recommendation_test/engine.json")
     app_context = AppContext(
-        name="MyRecommender",
+        name="MyApp",
         template=template_path,
         engine_json_path=engine_json_path)
-
     self.app = AppEngine(self.test_context, app_context)
 
   def runTest(self):

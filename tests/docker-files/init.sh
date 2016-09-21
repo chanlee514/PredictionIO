@@ -34,7 +34,7 @@ echo '== Starting HBase... =='
 $HBASE_HOME/bin/start-hbase.sh
 
 echo '== Starting standalone Spark cluster... =='
-$SPARK_HOME/sbin/start-all.sh
+source $SPARK_HOME/conf/spark-env.sh && $SPARK_HOME/sbin/start-all.sh
 
 echo '== Starting Elasticsearch... =='
 $ELASTICSEARCH_HOME/bin/elasticsearch -d -p $PIO_HOME/es.pid

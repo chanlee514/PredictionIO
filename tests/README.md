@@ -14,7 +14,7 @@ A good way to that is to use the docker image with installed and running depende
 
 To download the image run:
 ```
-$ docker pull ziemin/pio-testing
+$ docker pull chanlee514/pio-testing
 ```
 
 The most convenient way to make use of it is to execute ***run_docker.sh*** script passing it the configuration, the path to PredictionIO's repository with archived snapshot and the command to run. When no command is provided it opens a bash shell inside the docker image. Example of usage:

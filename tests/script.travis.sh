@@ -32,9 +32,11 @@ if [[ $BUILD_TYPE == Unit ]]; then
   # Run all unit tests
   sbt test
 
-else
+elif [[ $BUILD_TYPE == Integration ]]; then
   REPO=`pwd`
-
   ./tests/run_docker.sh $METADATA_REP $EVENTDATA_REP $MODELDATA_REP \
-    $REPO 'python3 /tests/pio_tests/tests.py'
+    $REPO 'python3 /tests/pio_tests/tests.py --tests scala_parallel_recom'
+else
+  echo "Please specify test $BUILD_TYPE: [Unit, Integration]"
+  exit 1
 fi

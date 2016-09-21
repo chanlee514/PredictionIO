@@ -14,3 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+from pio_tests.scenarios.basic_app_usecases import BasicAppUsecases
+from pio_tests.scenarios.eventserver_test import EventserverTest
+
+__all__ = [ "BasicAppUsecases", "EventserverTest" ]

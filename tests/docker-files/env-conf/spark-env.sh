@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 # Options read when launching programs locally with
 # ./bin/run-example or ./bin/spark-submit
 # - HADOOP_CONF_DIR, to point Spark towards Hadoop configuration files
@@ -26,6 +27,21 @@
 # - SPARK_YARN_DIST_ARCHIVES, Comma separated list of archives to be distributed with the job.
 
 # Options for the daemons used in the standalone deploy mode
+SPARK_MASTER_PORT=7077
+SPARK_MASTER_WEBUI_PORT 8080
+SPARK_WORKER_PORT=7078
+SPARK_WORKER_WEBUI_PORT 8081
+SPARK_LOCAL_IP=0.0.0.0
+SPARK_MASTER_IP=0.0.0.0
+SPARK_MASTER_OPTS="-Dspark.driver.port=7001 -Dspark.fileserver.port=7002 
+	-Dspark.broadcast.port=7003 -Dspark.replClassServer.port=7004 
+	-Dspark.blockManager.port=7005 -Dspark.executor.port=7006 
+	-Dspark.ui.port=4040 -Dspark.broadcast.factory=org.apache.spark.broadcast.HttpBroadcastFactory"
+SPARK_WORKER_OPTS="-Dspark.driver.port=7001 -Dspark.fileserver.port=7002 
+ -Dspark.broadcast.port=7003 -Dspark.replClassServer.port=7004 
+ -Dspark.blockManager.port=7005 -Dspark.executor.port=7006 
+ -Dspark.ui.port=4040 -Dspark.broadcast.factory=org.apache.spark.broadcast.HttpBroadcastFactory"
+
 # - SPARK_MASTER_IP, to bind the master to a different IP address or hostname
 # - SPARK_MASTER_PORT / SPARK_MASTER_WEBUI_PORT, to use non-default ports for the master
 # - SPARK_MASTER_OPTS, to set config properties only for the master (e.g. "-Dx=y")

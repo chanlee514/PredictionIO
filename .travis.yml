@@ -59,6 +59,7 @@ before_cache:
 env:
   global:
     - PIO_HOME=`pwd`
+    - TEST_NAMES=all
 
   matrix:
     - BUILD_TYPE=Unit
@@ -68,7 +69,7 @@ env:
 
 before_install:
   - unset SBT_OPTS JVM_OPTS
-  - docker pull ziemin/pio-testing
+  - docker pull chanlee514/pio-testing
   - service haveged start
 
 before_script:

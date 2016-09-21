@@ -1,0 +1,1802 @@
+[
+  {
+    "eventTime": "2014-10-20T15:39:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i17",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-20T15:39:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-20T15:40:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-20T15:40:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-21T15:40:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i4",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-21T15:40:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i13",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-21T15:40:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-21T15:40:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i3",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-21T15:41:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i1",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-21T15:41:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i2",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-22T15:41:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-22T15:41:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-22T15:41:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-23T15:41:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-23T15:42:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i3",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-23T15:42:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i1",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-24T15:42:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-24T15:42:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-24T15:42:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u1",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-14T15:39:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-14T15:39:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i2",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-14T15:40:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i3",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:40:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:40:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i3",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:40:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i2",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:40:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i1",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:40:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i20",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:41:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i18",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:41:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i11",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:41:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:41:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:41:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-17T15:41:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i20",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-17T15:42:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i2",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-17T15:42:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i15",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-17T15:42:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-17T15:42:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-17T15:42:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-18T15:42:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i1",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-18T15:43:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i14",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-18T15:43:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-18T15:43:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i2",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-18T15:43:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i3",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-18T15:43:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i1",
+    "entityId": "u2",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-03T15:39:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-03T15:39:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-03T15:40:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-04T15:40:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i7",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-04T15:40:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i19",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-04T15:40:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i17",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-04T15:40:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-04T15:40:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i2",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-04T15:41:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i3",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-04T15:41:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i1",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-05T15:41:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-05T15:41:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i3",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-05T15:41:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i1",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-06T15:41:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i11",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-06T15:42:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i20",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-06T15:42:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i1",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-06T15:42:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-06T15:42:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i2",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-06T15:42:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i3",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-07T15:42:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i10",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-07T15:43:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i13",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-07T15:43:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-07T15:43:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i1",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-07T15:43:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i3",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-07T15:43:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i2",
+    "entityId": "u3",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-30T15:39:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i12",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-30T15:39:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i7",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-30T15:40:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-30T15:40:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i2",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-30T15:40:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i1",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-31T15:40:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i1",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-31T15:40:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i11",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-31T15:40:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i14",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-31T15:41:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-31T15:41:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-31T15:41:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-01T15:41:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i3",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-01T15:41:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i7",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-01T15:41:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i19",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-01T15:42:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-01T15:42:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i1",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-01T15:42:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i3",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-01T15:42:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i2",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-02T15:42:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-02T15:42:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-02T15:43:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-03T15:43:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-03T15:43:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-11-03T15:43:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u4",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-25T15:39:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i6",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-25T15:39:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-25T15:40:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i2",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-25T15:40:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i1",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-26T15:40:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i4",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-26T15:40:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i1",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-26T15:40:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i17",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-26T15:40:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-26T15:41:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i3",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-26T15:41:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i2",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:41:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i17",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:41:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i13",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:41:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i10",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:41:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:42:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i1",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:42:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i2",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:42:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i1",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:42:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i18",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:42:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i13",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:42:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:43:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i2",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:43:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i1",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:43:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i3",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-29T15:43:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i14",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-29T15:43:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-29T15:43:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i2",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-29T15:44:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i1",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-29T15:44:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i3",
+    "entityId": "u5",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:39:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i8",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:39:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i4",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:40:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i10",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:40:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:40:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:40:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:40:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:40:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i1",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:41:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i3",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:41:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i2",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-29T15:41:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-29T15:41:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i1",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-29T15:41:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i3",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-29T15:41:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i2",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-30T15:42:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i20",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-30T15:42:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-30T15:42:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-30T15:42:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-31T15:42:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i12",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-31T15:42:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i7",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-31T15:43:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-31T15:43:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i2",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-31T15:43:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i3",
+    "entityId": "u6",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-12T15:39:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i8",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-12T15:39:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-12T15:40:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i3",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-12T15:40:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i2",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-13T15:40:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i10",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-13T15:40:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i14",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-13T15:40:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-13T15:40:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i1",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-13T15:41:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i2",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-14T15:41:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-14T15:41:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i3",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-14T15:41:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i2",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:41:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i16",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:41:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i5",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:42:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i9",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:42:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:42:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i3",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:42:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i2",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:42:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i1",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:42:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:43:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:43:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u7",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-25T15:39:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i2",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-25T15:39:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-25T15:40:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-25T15:40:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-26T15:40:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-26T15:40:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i2",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-26T15:40:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i3",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-26T15:40:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i1",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:41:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:41:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i3",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-27T15:41:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i2",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:41:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i12",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:41:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:41:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-28T15:42:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-29T15:42:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-29T15:42:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i2",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-29T15:42:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i1",
+    "entityId": "u8",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-03T15:39:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-03T15:39:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i1",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-03T15:40:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i2",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-03T15:40:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i3",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-04T15:40:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-04T15:40:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i3",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-04T15:40:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i1",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-04T15:40:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i2",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-05T15:41:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-05T15:41:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i3",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-05T15:41:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i1",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-06T15:41:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i12",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-06T15:41:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-06T15:41:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i2",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-06T15:42:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s1i1",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-07T15:42:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-07T15:42:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i1",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-07T15:42:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i3",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-07T15:42:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i2",
+    "entityId": "u9",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:39:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i8",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:39:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p1",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:40:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i3",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-15T15:40:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i1",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:40:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:40:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i2",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:40:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i1",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-16T15:40:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i3",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-17T15:41:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p2",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-17T15:41:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i2",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-17T15:41:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i1",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-17T15:41:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s3i3",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-18T15:41:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-18T15:41:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i1",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-18T15:42:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i3",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-18T15:42:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s4i2",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-19T15:42:25.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i18",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-19T15:42:35.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i20",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-19T15:42:45.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "i5",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-19T15:42:55.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "p3",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-19T15:43:05.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i3",
+    "entityId": "u10",
+    "event": "buy"
+  },
+  {
+    "eventTime": "2014-10-19T15:43:15.618000-08:00",
+    "entityType": "user",
+    "targetEntityType": "item",
+    "targetEntityId": "s2i1",
+    "entityId": "u10",
+    "event": "buy"
+  }
+]

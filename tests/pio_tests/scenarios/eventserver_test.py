@@ -43,10 +43,9 @@ class EventserverTest(BaseTestCase):
 
 
   def setUp(self):
-    template_path = pjoin(
-        self.test_context.engine_directory, "recommendation-engine")
+    template_path = "https://github.com/chanlee514/template-scala-parallel-recommendation"
     app_context = AppContext(
-        name="MyRecommender",
+        name="MyApp",
         template=template_path)
     self.app = AppEngine(self.test_context, app_context)
 

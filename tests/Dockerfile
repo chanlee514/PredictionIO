@@ -30,7 +30,8 @@ RUN apt-get install -y \
     python3-pip \
     postgresql postgresql-contrib \
     openjdk-8-jdk \
-    openssh-client openssh-server
+    openssh-client openssh-server \
+    git
 
 RUN pip install predictionio
 RUN pip3 install --upgrade pip
@@ -83,24 +84,13 @@ ENV PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE PGSQL
 ENV JVM_OPTS '-Dfile.encoding=UTF8 -Xms2048M -Xmx2048M -Xss8M -XX:MaxPermSize=512M -XX:ReservedCodeCacheSize=256M'
 
 # Expose relevant ports
-# pio engine
-EXPOSE 8000
-# eventserver
-EXPOSE 7070
-# spark master UI
-EXPOSE 8080
-# spark worker UI
-EXPOSE 8081
-# spark context UI
-EXPOSE 4040
-# HMaster
-EXPOSE 60000
-# HMaster Info Web UI
-EXPOSE 60010
-# Region Server
-Expose 60020
-# Region Server Http
-EXPOSE 60030
+# PIO (eventserver, engine)
+EXPOSE 7070 8000 
+# Spark (master, worker, master UI, worker UI)
+EXPOSE 7077 7078 8080 8081 4040
+EXPOSE 7001 7002 7003 7004 7005 7006
+# HBase (master, UI, region server, region server http)
+EXPOSE 60000 60010 60020 60030
 
 ENTRYPOINT ["/init.sh"]
 CMD 'bash'
