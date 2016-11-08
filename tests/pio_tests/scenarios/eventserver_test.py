@@ -83,17 +83,17 @@ class EventserverTest(BaseTestCase):
 
     self.log.info("Sending batch of events...")
     r = self.app.send_events_batch(
-        self.load_events("rate_events_25.json"))
+        self.load_events("25_rate_events.json"))
     self.assertEqual(200, r.status_code)
 
     self.log.info("Cannot send more than 50 events per batch")
     r = self.app.send_events_batch(
-        self.load_events("signup_events_51.json"))
+        self.load_events("51_signup_events.json"))
     self.assertEqual(400, r.status_code)
 
     self.log.info("Importing events from file does not have batch size limit...")
     self.app.import_events_batch(
-        self.load_events("signup_events_51.json"))
+        self.load_events("51_signup_events.json"))
 
     self.log.info("Individual events may fail when sending events as batch")
     r = self.app.send_events_batch(

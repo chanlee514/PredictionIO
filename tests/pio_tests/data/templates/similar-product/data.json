@@ -1,0 +1,1330 @@
+[
+  {
+    "entityId": "u1",
+    "entityType": "user",
+    "event": "$set"
+  },
+  {
+    "entityId": "u2",
+    "entityType": "user",
+    "event": "$set"
+  },
+  {
+    "entityId": "u3",
+    "entityType": "user",
+    "event": "$set"
+  },
+  {
+    "entityId": "u4",
+    "entityType": "user",
+    "event": "$set"
+  },
+  {
+    "entityId": "u5",
+    "entityType": "user",
+    "event": "$set"
+  },
+  {
+    "entityId": "u6",
+    "entityType": "user",
+    "event": "$set"
+  },
+  {
+    "entityId": "u7",
+    "entityType": "user",
+    "event": "$set"
+  },
+  {
+    "entityId": "u8",
+    "entityType": "user",
+    "event": "$set"
+  },
+  {
+    "entityId": "u9",
+    "entityType": "user",
+    "event": "$set"
+  },
+  {
+    "entityId": "u10",
+    "entityType": "user",
+    "event": "$set"
+  },
+  {
+    "entityId": "i1",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c4"
+      ]
+    }
+  },
+  {
+    "entityId": "i2",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c4",
+        "c6"
+      ]
+    }
+  },
+  {
+    "entityId": "i3",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c1"
+      ]
+    }
+  },
+  {
+    "entityId": "i4",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c2",
+        "c6",
+        "c4",
+        "c5"
+      ]
+    }
+  },
+  {
+    "entityId": "i5",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c3",
+        "c4",
+        "c1",
+        "c2"
+      ]
+    }
+  },
+  {
+    "entityId": "i6",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c4",
+        "c6",
+        "c3",
+        "c1"
+      ]
+    }
+  },
+  {
+    "entityId": "i7",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c4",
+        "c2",
+        "c1",
+        "c3"
+      ]
+    }
+  },
+  {
+    "entityId": "i8",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c5",
+        "c6"
+      ]
+    }
+  },
+  {
+    "entityId": "i9",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c6",
+        "c2",
+        "c4"
+      ]
+    }
+  },
+  {
+    "entityId": "i10",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c6",
+        "c5"
+      ]
+    }
+  },
+  {
+    "entityId": "i11",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c1"
+      ]
+    }
+  },
+  {
+    "entityId": "i12",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c6"
+      ]
+    }
+  },
+  {
+    "entityId": "i13",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c4",
+        "c2"
+      ]
+    }
+  },
+  {
+    "entityId": "i14",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c3",
+        "c2",
+        "c6"
+      ]
+    }
+  },
+  {
+    "entityId": "i15",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c6",
+        "c4",
+        "c5"
+      ]
+    }
+  },
+  {
+    "entityId": "i16",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c6",
+        "c4",
+        "c1",
+        "c3"
+      ]
+    }
+  },
+  {
+    "entityId": "i17",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c6",
+        "c3",
+        "c5",
+        "c1"
+      ]
+    }
+  },
+  {
+    "entityId": "i18",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c4",
+        "c2",
+        "c1",
+        "c3"
+      ]
+    }
+  },
+  {
+    "entityId": "i19",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c1",
+        "c5",
+        "c2",
+        "c6"
+      ]
+    }
+  },
+  {
+    "entityId": "i20",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c5",
+        "c6"
+      ]
+    }
+  },
+  {
+    "entityId": "i21",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c4"
+      ]
+    }
+  },
+  {
+    "entityId": "i22",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c5"
+      ]
+    }
+  },
+  {
+    "entityId": "i23",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c6",
+        "c5"
+      ]
+    }
+  },
+  {
+    "entityId": "i24",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c6",
+        "c2",
+        "c1"
+      ]
+    }
+  },
+  {
+    "entityId": "i25",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c1",
+        "c6",
+        "c2"
+      ]
+    }
+  },
+  {
+    "entityId": "i26",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c1",
+        "c6",
+        "c4"
+      ]
+    }
+  },
+  {
+    "entityId": "i27",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c6",
+        "c5"
+      ]
+    }
+  },
+  {
+    "entityId": "i28",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c3",
+        "c6"
+      ]
+    }
+  },
+  {
+    "entityId": "i29",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c4",
+        "c3",
+        "c5"
+      ]
+    }
+  },
+  {
+    "entityId": "i30",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c4",
+        "c3",
+        "c5",
+        "c1"
+      ]
+    }
+  },
+  {
+    "entityId": "i31",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c6",
+        "c3"
+      ]
+    }
+  },
+  {
+    "entityId": "i32",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c1",
+        "c3",
+        "c5"
+      ]
+    }
+  },
+  {
+    "entityId": "i33",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c4"
+      ]
+    }
+  },
+  {
+    "entityId": "i34",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c1",
+        "c4",
+        "c2"
+      ]
+    }
+  },
+  {
+    "entityId": "i35",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c3",
+        "c4",
+        "c6"
+      ]
+    }
+  },
+  {
+    "entityId": "i36",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c1"
+      ]
+    }
+  },
+  {
+    "entityId": "i37",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c6",
+        "c2",
+        "c5"
+      ]
+    }
+  },
+  {
+    "entityId": "i38",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c2",
+        "c6",
+        "c5"
+      ]
+    }
+  },
+  {
+    "entityId": "i39",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c4",
+        "c2"
+      ]
+    }
+  },
+  {
+    "entityId": "i40",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c5",
+        "c1"
+      ]
+    }
+  },
+  {
+    "entityId": "i41",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c5",
+        "c2",
+        "c1"
+      ]
+    }
+  },
+  {
+    "entityId": "i42",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c2",
+        "c1",
+        "c6",
+        "c3"
+      ]
+    }
+  },
+  {
+    "entityId": "i43",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c2"
+      ]
+    }
+  },
+  {
+    "entityId": "i44",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c6",
+        "c3"
+      ]
+    }
+  },
+  {
+    "entityId": "i45",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c2",
+        "c6",
+        "c3",
+        "c4"
+      ]
+    }
+  },
+  {
+    "entityId": "i46",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c2",
+        "c1"
+      ]
+    }
+  },
+  {
+    "entityId": "i47",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c2",
+        "c5",
+        "c4"
+      ]
+    }
+  },
+  {
+    "entityId": "i48",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c2"
+      ]
+    }
+  },
+  {
+    "entityId": "i49",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c4",
+        "c5",
+        "c2",
+        "c1"
+      ]
+    }
+  },
+  {
+    "entityId": "i50",
+    "entityType": "item",
+    "event": "$set",
+    "properties": {
+      "categories": [
+        "c5",
+        "c2"
+      ]
+    }
+  },
+  {
+    "entityId": "u1",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i18"
+  },
+  {
+    "entityId": "u1",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i21"
+  },
+  {
+    "entityId": "u1",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i49"
+  },
+  {
+    "entityId": "u1",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i20"
+  },
+  {
+    "entityId": "u1",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i43"
+  },
+  {
+    "entityId": "u1",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i8"
+  },
+  {
+    "entityId": "u1",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i1"
+  },
+  {
+    "entityId": "u1",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i41"
+  },
+  {
+    "entityId": "u1",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i37"
+  },
+  {
+    "entityId": "u1",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i46"
+  },
+  {
+    "entityId": "u2",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i22"
+  },
+  {
+    "entityId": "u2",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i47"
+  },
+  {
+    "entityId": "u2",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i45"
+  },
+  {
+    "entityId": "u2",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i11"
+  },
+  {
+    "entityId": "u2",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i35"
+  },
+  {
+    "entityId": "u2",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i38"
+  },
+  {
+    "entityId": "u2",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i30"
+  },
+  {
+    "entityId": "u2",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i23"
+  },
+  {
+    "entityId": "u2",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i13"
+  },
+  {
+    "entityId": "u2",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i14"
+  },
+  {
+    "entityId": "u3",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i12"
+  },
+  {
+    "entityId": "u3",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i4"
+  },
+  {
+    "entityId": "u3",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i29"
+  },
+  {
+    "entityId": "u3",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i14"
+  },
+  {
+    "entityId": "u3",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i38"
+  },
+  {
+    "entityId": "u3",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i3"
+  },
+  {
+    "entityId": "u3",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i40"
+  },
+  {
+    "entityId": "u3",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i30"
+  },
+  {
+    "entityId": "u3",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i39"
+  },
+  {
+    "entityId": "u3",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i37"
+  },
+  {
+    "entityId": "u4",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i45"
+  },
+  {
+    "entityId": "u4",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i29"
+  },
+  {
+    "entityId": "u4",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i1"
+  },
+  {
+    "entityId": "u4",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i36"
+  },
+  {
+    "entityId": "u4",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i8"
+  },
+  {
+    "entityId": "u4",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i14"
+  },
+  {
+    "entityId": "u4",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i30"
+  },
+  {
+    "entityId": "u4",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i23"
+  },
+  {
+    "entityId": "u4",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i18"
+  },
+  {
+    "entityId": "u4",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i39"
+  },
+  {
+    "entityId": "u5",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i31"
+  },
+  {
+    "entityId": "u5",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i17"
+  },
+  {
+    "entityId": "u5",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i13"
+  },
+  {
+    "entityId": "u5",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i41"
+  },
+  {
+    "entityId": "u5",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i22"
+  },
+  {
+    "entityId": "u5",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i36"
+  },
+  {
+    "entityId": "u5",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i16"
+  },
+  {
+    "entityId": "u5",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i9"
+  },
+  {
+    "entityId": "u5",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i23"
+  },
+  {
+    "entityId": "u5",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i34"
+  },
+  {
+    "entityId": "u6",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i9"
+  },
+  {
+    "entityId": "u6",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i39"
+  },
+  {
+    "entityId": "u6",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i45"
+  },
+  {
+    "entityId": "u6",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i38"
+  },
+  {
+    "entityId": "u6",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i47"
+  },
+  {
+    "entityId": "u6",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i1"
+  },
+  {
+    "entityId": "u6",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i28"
+  },
+  {
+    "entityId": "u6",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i46"
+  },
+  {
+    "entityId": "u6",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i3"
+  },
+  {
+    "entityId": "u6",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i12"
+  },
+  {
+    "entityId": "u7",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i14"
+  },
+  {
+    "entityId": "u7",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i26"
+  },
+  {
+    "entityId": "u7",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i21"
+  },
+  {
+    "entityId": "u7",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i23"
+  },
+  {
+    "entityId": "u7",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i36"
+  },
+  {
+    "entityId": "u7",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i1"
+  },
+  {
+    "entityId": "u7",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i3"
+  },
+  {
+    "entityId": "u7",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i6"
+  },
+  {
+    "entityId": "u7",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i43"
+  },
+  {
+    "entityId": "u7",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i44"
+  },
+  {
+    "entityId": "u8",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i49"
+  },
+  {
+    "entityId": "u8",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i42"
+  },
+  {
+    "entityId": "u8",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i5"
+  },
+  {
+    "entityId": "u8",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i24"
+  },
+  {
+    "entityId": "u8",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i15"
+  },
+  {
+    "entityId": "u8",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i46"
+  },
+  {
+    "entityId": "u8",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i16"
+  },
+  {
+    "entityId": "u8",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i28"
+  },
+  {
+    "entityId": "u8",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i25"
+  },
+  {
+    "entityId": "u8",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i45"
+  },
+  {
+    "entityId": "u9",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i10"
+  },
+  {
+    "entityId": "u9",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i17"
+  },
+  {
+    "entityId": "u9",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i6"
+  },
+  {
+    "entityId": "u9",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i27"
+  },
+  {
+    "entityId": "u9",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i33"
+  },
+  {
+    "entityId": "u9",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i18"
+  },
+  {
+    "entityId": "u9",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i4"
+  },
+  {
+    "entityId": "u9",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i8"
+  },
+  {
+    "entityId": "u9",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i16"
+  },
+  {
+    "entityId": "u9",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i25"
+  },
+  {
+    "entityId": "u10",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i40"
+  },
+  {
+    "entityId": "u10",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i19"
+  },
+  {
+    "entityId": "u10",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i39"
+  },
+  {
+    "entityId": "u10",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i30"
+  },
+  {
+    "entityId": "u10",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i20"
+  },
+  {
+    "entityId": "u10",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i17"
+  },
+  {
+    "entityId": "u10",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i22"
+  },
+  {
+    "entityId": "u10",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i31"
+  },
+  {
+    "entityId": "u10",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i18"
+  },
+  {
+    "entityId": "u10",
+    "entityType": "user",
+    "event": "view",
+    "targetEntityType": "item",
+    "targetEntityId": "i29"
+  }
+]
