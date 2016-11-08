@@ -60,15 +60,15 @@ class BasicAppUsecases(BaseTestCase):
 
   def setUp(self):
     random.seed(3)
-    self.log.info("Setting up the engine")
+    self.log.info("Setting up the engine...")
 
-    template_path = pjoin(
-        self.test_context.engine_directory, "recommendation-engine")
+    template_path = "https://github.com/apache/incubator-predictionio-template-recommender"
+
     engine_json_path = pjoin(
-        self.test_context.data_directory, "quickstart_test/engine.json")
+        self.test_context.data_directory, "templates/recommender/engine.json")
 
     app_context = AppContext(
-        name="MyRecommender",
+        name="TestApp",
         template=template_path,
         engine_json_path=engine_json_path)
 
@@ -82,7 +82,7 @@ class BasicAppUsecases(BaseTestCase):
     self.check_train_and_deploy()
 
   def app_creation(self):
-    self.log.info("Adding a new application")
+    self.log.info("Adding a new application...")
     description = "SomeDescription"
     self.app.new(description=description)
     self.assertEqual(description, self.app.description)
@@ -91,7 +91,7 @@ class BasicAppUsecases(BaseTestCase):
     self.assertRaises(CalledProcessError, lambda : self.app.new())
 
   def check_app_list(self):
-    self.log.info("Checking if app is on the list")
+    self.log.info("Checking if app is on the list...")
     apps = pio_app_list()
     self.assertEqual(1,
         len([a for a in apps if a['name'] == self.app.app_context.name]))
@@ -104,14 +104,14 @@ class BasicAppUsecases(BaseTestCase):
     for ev in buy_events + rate_events:
       self.assertEquals(201, self.app.send_event(ev).status_code)
 
-    self.log.info("Checking imported events")
+    self.log.info("Checking imported events...")
     r = self.app.get_events(params={'limit': -1})
     self.assertEqual(200, r.status_code)
     self.assertEqual(len(buy_events) + len(rate_events), len(r.json()))
 
-    self.log.info("Deleting entire data")
+    self.log.info("Deleting entire data...")
     self.app.delete_data()
-    self.log.info("Checking if there are no events at all")
+    self.log.info("Checking all events are deleted...")
     r = self.app.get_events(params={'limit': -1})
     self.assertEqual(404, r.status_code)
 
@@ -128,24 +128,24 @@ class BasicAppUsecases(BaseTestCase):
     for ev in buy_events + rate_events:
       self.assertEquals(201, self.app.send_event(ev).status_code)
 
-    self.log.info("Training")
+    self.log.info("Training...")
     self.app.train()
-    self.log.info("Deploying")
+    self.log.info("Deploying...")
     self.app.deploy()
     self.assertFalse(self.app.deployed_process.poll())
 
-    self.log.info("Importing more events")
+    self.log.info("Importing more events...")
     buy_events = get_buy_events(60, 5)
     rate_events = get_rate_events(60, 5)
     for ev in buy_events + rate_events:
       self.assertEquals(201, self.app.send_event(ev).status_code)
 
-    self.log.info("Training again")
+    self.log.info("Training again...")
     self.app.train()
 
     time.sleep(7)
 
-    self.log.info("Check serving")
+    self.log.info("Checking serving...")
     r = self.app.query({"user": 1, "num": 5})
     self.assertEqual(200, r.status_code)
     result = r.json()
@@ -155,17 +155,16 @@ class BasicAppUsecases(BaseTestCase):
     result = r.json()
     self.assertEqual(3, len(result['itemScores']))
 
-    self.log.info("Remove data")
+    self.log.info("Removing data...")
     self.app.delete_data()
     self.log.info("Retraining should fail")
     self.assertRaises(CalledProcessError, lambda: self.app.train())
 
 
   def tearDown(self):
-    self.log.info("Stopping deployed engine")
+    self.log.info("Stopping deployed engine...")
     self.app.stop()
-    self.log.info("Deleting all related data")
+    self.log.info("Deleting all related data...")
     self.app.delete_data()
-    self.log.info("Removing an app")
+    self.log.info("Removing test app...")
     self.app.delete()
-

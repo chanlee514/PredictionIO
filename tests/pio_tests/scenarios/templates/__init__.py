@@ -15,7 +15,20 @@
 # limitations under the License.
 #
 
-from pio_tests.scenarios.basic_app_usecases import BasicAppUsecases
-from pio_tests.scenarios.eventserver_test import EventserverTest
+from pio_tests.scenarios.templates.attribute_based_classifier_test import AttributeBasedClassifierTest
+from pio_tests.scenarios.templates.ecom_recommender_test import EcomRecommenderTest
+from pio_tests.scenarios.templates.recommender_test import RecommenderTest
+from pio_tests.scenarios.templates.skeleton_test import SkeletonTest
+from pio_tests.scenarios.templates.similar_product_test import SimilarProductTest
+from pio_tests.scenarios.templates.text_classifier_test import TextClassifierTest
+from pio_tests.scenarios.templates.java_ecom_recommender_test import JavaEcomRecommenderTest
 
-__all__ = [ "BasicAppUsecases", "EventserverTest" ]
+__all__ = [
+	"AttributeBasedClassifierTest",
+	"EcomRecommenderTest",
+	"RecommenderTest",
+	"SkeletonTest",
+	"SimilarProductTest",
+	"TextClassifierTest",
+	"JavaEcomRecommenderTest"
+]

@@ -15,6 +15,12 @@
 # limitations under the License.
 #
 
+"""
+Integration test for PredictionIO Eventserver API
+Refer to below for further information:
+  http://predictionio.incubator.apache.org/datacollection/eventmodel
+  http://predictionio.incubator.apache.org/datacollection/eventapi
+"""
 import unittest
 import requests
 import json
@@ -24,12 +30,7 @@ from utils import AppEngine, pjoin
 from pio_tests.integration import BaseTestCase, AppContext
 
 class EventserverTest(BaseTestCase):
-  """ Integration test for PredictionIO Eventserver API
-  Refer to below for further information:
-    http://docs.prediction.io/datacollection/eventmodel/
-    http://docs.prediction.io/datacollection/eventapi/
-  """
-  # Helper methods
+  
   def eventserver_url(self, path=None):
     url = 'http://{}:{}'.format(
             self.test_context.es_ip, self.test_context.es_port)
@@ -43,15 +44,14 @@ class EventserverTest(BaseTestCase):
 
 
   def setUp(self):
-    template_path = pjoin(
-        self.test_context.engine_directory, "recommendation-engine")
+    template_path = "https://github.com/apache/incubator-predictionio-template-recommender"
     app_context = AppContext(
-        name="MyRecommender",
+        name="TestApp",
         template=template_path)
     self.app = AppEngine(self.test_context, app_context)
 
   def runTest(self):
-    self.log.info("Check if Eventserver is alive and running")
+    self.log.info("Check if Eventserver is alive and running...")
     r = requests.get(self.eventserver_url())
     self.assertDictEqual(r.json(), {"status": "alive"})
 
@@ -64,7 +64,7 @@ class EventserverTest(BaseTestCase):
         params={'accessKey': ''})
     self.assertDictEqual(r.json(), {"message": "Invalid accessKey."})
 
-    self.log.info("Adding new pio application")
+    self.log.info("Adding new pio application...")
     self.app.new()
 
     self.log.info("No events have been sent yet")
@@ -72,7 +72,7 @@ class EventserverTest(BaseTestCase):
     self.assertDictEqual(r.json(), {"message": "Not Found"})
 
     # Testing POST
-    self.log.info("Sending single event")
+    self.log.info("Sending single event...")
     event1 = {
       'event' : 'test',
       'entityType' : 'test',
@@ -81,7 +81,7 @@ class EventserverTest(BaseTestCase):
     r = self.app.send_event(event1)
     self.assertEqual(201, r.status_code)
 
-    self.log.info("Sending batch of events")
+    self.log.info("Sending batch of events...")
     r = self.app.send_events_batch(
         self.load_events("rate_events_25.json"))
     self.assertEqual(200, r.status_code)
@@ -91,7 +91,7 @@ class EventserverTest(BaseTestCase):
         self.load_events("signup_events_51.json"))
     self.assertEqual(400, r.status_code)
 
-    self.log.info("Importing events from file does not have batch size limit")
+    self.log.info("Importing events from file does not have batch size limit...")
     self.app.import_events_batch(
         self.load_events("signup_events_51.json"))
 
@@ -158,9 +158,9 @@ class EventserverTest(BaseTestCase):
     self.assertEqual('2014-11-05T09:39:45.618-08:00', r.json()[0]['eventTime'])
 
   def tearDown(self):
-    self.log.info("Deleting all app data")
+    self.log.info("Deleting all app data...")
     self.app.delete_data()
-    self.log.info("Deleting app")
+    self.log.info("Deleting test app...")
     self.app.delete()
 
 
@@ -169,4 +169,3 @@ if __name__ == '__main__':
   result = unittest.TextTestRunner(verbosity=2).run(suite)
   if not result.wasSuccessful():
     sys.exit(1)
-

@@ -15,7 +15,14 @@
 # limitations under the License.
 #
 
-from pio_tests.scenarios.basic_app_usecases import BasicAppUsecases
-from pio_tests.scenarios.eventserver_test import EventserverTest
+from pio_tests.integration import BaseTestCase, AppContext
+from utils import AppEngine, pjoin
+import json
 
-__all__ = [ "BasicAppUsecases", "EventserverTest" ]
+class JavaEcomRecommenderTest(BaseTestCase):
+  def __repr__(self):
+    return "JavaEcomRecommenderTest"
+
+  # TODO: Need to fix jblas bug for this template for test to pass
+  def runTest(self):
+    pass
