@@ -35,6 +35,6 @@ if [[ $BUILD_TYPE == Unit ]]; then
   psql -c 'create database predictionio;' -U postgres
   ./bin/travis/pio-start-travis
 
-else # Integration Tests
+elif [[ $BUILD_TYPE == Integration ]]; then
   ./make-distribution.sh
 fi

@@ -97,7 +97,7 @@ def send_event(event, test_context, access_key, channel=None):
   """ Sends an event to the eventserver
   Args:
     event: json-like dictionary describing an event
-    test_context (obj: `TestContext`):
+    test_context (obj: `TestContext`)
     access_key: application's access key
     channel (str): custom channel for storing event
   Returns: `requests.Response`
@@ -130,9 +130,21 @@ def send_events_batch(events, test_context, access_key, channel=None):
       params=params,
       json=events)
 
+def import_events_from_file(json_file, test_context, appid, channel=None):
+  """ Wrapper for `pio import`
+  Args:
+    json_file: json file containing list of events
+    test_context (obj: `TestContext`)
+    appid (int): application's id
+    channel (str): custom channel for storing event
+  """
+  srun('pio import --appid {} --input {} {}'.format(
+      appid,
+      json_file,
+      '--channel {}'.format(channel) if channel else ''))
 
 def import_events_batch(events, test_context, appid, channel=None):
-  """ Imports events in batch from file with `pio import`
+  """ Imports list of events in batch
   Args:
     events: a list of json-like dictionaries for events
     test_context (obj: `TestContext`)
@@ -144,19 +156,16 @@ def import_events_batch(events, test_context, appid, channel=None):
   # representing an event. Empty lines are not allowed.
   contents = ''
   for ev in events:
-      contents += '{}\n'.format(json.dumps(ev))
+    contents += '{}\n'.format(json.dumps(ev))
   contents.rstrip('\n')
 
   file_path = pjoin(test_context.data_directory, 'events.json.tmp')
   try:
-      with open(file_path, 'w') as f:
-          f.write(contents)
-      srun('pio import --appid {} --input {} {}'.format(
-          appid,
-          file_path,
-          '--channel {}'.format(channel) if channel else ''))
+    with open(file_path, 'w') as f:
+      f.write(contents)
+      import_events_from_file(file_path, test_context, appid)
   finally:
-      os.remove(file_path)
+    os.remove(file_path)
 
 def get_events(test_context, access_key, params={}):
   """ Gets events for some application
@@ -182,6 +191,21 @@ def query_engine(data, engine_ip='localhost', engine_port=8000):
   url = get_engine_url_json(engine_ip, engine_port)
   return requests.post(url, json=data)
 
+def items_in_categories(events, categories):
+  """ Returns 'entityId' of items in categories
+  Args:
+    events: list of events, including $set events for items
+    catogories: list of category ids
+  """
+  item_ids = []
+  for e in events:
+    if ('properties' in e) and ('categories' in e['properties']):
+      ca = e['properties']['categories']
+      if len(set(ca).intersection(categories)) > 0:
+        item_ids.append(e['entityId'])
+  return item_ids
+
+
 class AppEngine:
   """ This is a utility class simplifying all app related interactions.
   Basically it is just a wrapper on other utility functions and shell
@@ -190,9 +214,9 @@ class AppEngine:
 
   def __init__(self, test_context, app_context, already_created=False):
     """ Args:
-        test_context (obj: `TestContext`)
-        app_context (obj: `AppContext`)
-        already_created (bool): True if the given app has been already added
+      test_context (obj: `TestContext`)
+      app_context (obj: `AppContext`)
+      already_created (bool): True if the given app has been already added
     """
     self.test_context = test_context
     self.app_context = app_context
@@ -308,6 +332,9 @@ class AppEngine:
 
   def send_events_batch(self, events):
     return send_events_batch(events, self.test_context, self.access_key)
+
+  def import_events_from_file(self, json_file):
+    return import_events_from_file(json_file, self.test_context, self.id)
 
   def import_events_batch(self, events):
     return import_events_batch(events, self.test_context, self.id)
