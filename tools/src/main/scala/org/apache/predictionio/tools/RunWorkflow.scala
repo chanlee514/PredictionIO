@@ -48,22 +48,23 @@ case class WorkflowArgs(
   jsonExtractor: JsonExtractorOption = JsonExtractorOption.Both)
 
 object RunWorkflow extends Logging {
-
   def runWorkflow(
     wa: WorkflowArgs,
     sa: SparkArgs,
     pioHome: String,
+    engineDirPath: String,
     verbose: Boolean = false): Expected[(Process, () => Unit)] = {
 
-    val jarFiles = jarFilesForScala.map(_.toURI)
-    val ei = Console.getEngineInfo(wa.variantJson)
+    val jarFiles = jarFilesForScala(engineDirPath).map(_.toURI)
+    val variantJson = engineDirPath + File.separator + wa.variantJson.getName
+    val ei = Console.getEngineInfo(new File(variantJson))
     val args = Seq(
       "--engine-id",
       ei.engineId,
       "--engine-version",
       ei.engineVersion,
       "--engine-variant",
-      wa.variantJson.toURI.toString,
+      variantJson,
       "--verbosity",
       wa.verbosity.toString) ++
       wa.engineFactory.map(

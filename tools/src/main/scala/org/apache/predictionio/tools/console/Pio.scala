@@ -75,11 +75,12 @@ object Pio extends Logging {
   }
 
   def build(
+    ea: EngineArgs,
     buildArgs: BuildArgs,
     pioHome: String,
     verbose: Boolean = false): Int = {
 
-    doOnSuccess(Engine.build(buildArgs, pioHome, verbose)) {
+    doOnSuccess(Engine.build(ea, buildArgs, pioHome, verbose)) {
       _ => info("Your engine is ready for training.")
       0
     }
@@ -129,6 +130,7 @@ object Pio extends Logging {
   }
 
   def run(
+    ea: EngineArgs,
     mainClass: String,
     driverArguments: Seq[String],
     buildArgs: BuildArgs,
@@ -136,7 +138,7 @@ object Pio extends Logging {
     pioHome: String,
     verbose: Boolean = false): Int =
       doOnSuccess(Engine.run(
-        mainClass, driverArguments, buildArgs,
+        ea, mainClass, driverArguments, buildArgs,
         sparkArgs, pioHome, verbose)) { proc =>
 
           val r = proc.exitValue()

@@ -51,7 +51,8 @@ case class BuildArgs(
 
 case class EngineArgs(
   engineId: Option[String] = None,
-  engineVersion: Option[String] = None)
+  engineVersion: Option[String] = None,
+  engineDir: Option[String] = None)
 
 object Engine extends EitherLogging {
 
@@ -69,11 +70,16 @@ object Engine extends EitherLogging {
   }
 
   private def compile(
-    buildArgs: BuildArgs, pioHome: String, verbose: Boolean): MaybeError = {
-    // only add pioVersion to sbt if project/pio.sbt exists
-    if (new File("project", "pio-build.sbt").exists || buildArgs.forceGeneratePIOSbt) {
+    buildArgs: BuildArgs,
+    pioHome: String,
+    engineDirPath: String,
+    verbose: Boolean): MaybeError = {
+
+    val f = new File(
+      Seq(engineDirPath, "project", "pio-build.sbt").mkString(File.separator))
+    if (f.exists || buildArgs.forceGeneratePIOSbt) {
       FileUtils.writeLines(
-        new File("pio.sbt"),
+        new File(engineDirPath, "pio.sbt"),
         Seq(
           "// Generated automatically by pio build.",
           "// Changes in this file will be overridden.",
@@ -83,7 +89,7 @@ object Engine extends EitherLogging {
     implicit val formats = Utils.json4sDefaultFormats
 
     val sbt = detectSbt(buildArgs.sbt, pioHome)
-    info(s"Using command '${sbt}' at the current working directory to build.")
+    info(s"Using command '${sbt}' at ${engineDirPath} to build.")
     info("If the path above is incorrect, this process will fail.")
     val asm =
       if (buildArgs.sbtAssemblyPackageDependency) {
@@ -94,10 +100,10 @@ object Engine extends EitherLogging {
     val clean = if (buildArgs.sbtClean) " clean" else ""
     val buildCmd = s"${sbt} ${buildArgs.sbtExtra.getOrElse("")}${clean} " +
       (if (buildArgs.uberJar) "assembly" else s"package${asm}")
-    val core = new File(s"pio-assembly-${BuildInfo.version}.jar")
+    val core = new File(engineDirPath, s"pio-assembly-${BuildInfo.version}.jar")
     if (buildArgs.uberJar) {
       info(s"Uber JAR enabled. Putting ${core.getName} in lib.")
-      val dst = new File("lib")
+      val dst = new File(engineDirPath, "lib")
       dst.mkdir()
       coreAssembly(pioHome) match {
         case Right(coreFile) =>
@@ -108,7 +114,7 @@ object Engine extends EitherLogging {
         case Left(errStr) => return Left(errStr)
       }
     } else {
-      if (new File("engine.json").exists()) {
+      if (new File(engineDirPath, "engine.json").exists()) {
         info(s"Uber JAR disabled. Making sure lib/${core.getName} is absent.")
         new File("lib", core.getName).delete()
       } else {
@@ -116,13 +122,14 @@ object Engine extends EitherLogging {
           s"like an engine project directory. Please delete lib/${core.getName} manually.")
       }
     }
-    info(s"Going to run: ${buildCmd}")
+    info(s"Going to run: ${buildCmd} in ${engineDirPath}")
     try {
+      val p = Process(s"${buildCmd}", new File(engineDirPath))
       val r =
         if (verbose) {
-          buildCmd.!(ProcessLogger(line => info(line), line => error(line)))
+          p.!(ProcessLogger(line => info(line), line => error(line)))
         } else {
-          buildCmd.!(ProcessLogger(
+          p.!(ProcessLogger(
             line => outputSbtError(line),
             line => outputSbtError(line)))
         }
@@ -138,16 +145,20 @@ object Engine extends EitherLogging {
   }
 
   def build(
+    ea: EngineArgs,
     buildArgs: BuildArgs,
     pioHome: String,
     verbose: Boolean): MaybeError = {
 
-    Template.verifyTemplateMinVersion(new File("template.json")) match {
+    val engineDirPath = getEngineDirPath(ea.engineDir)
+    Template.verifyTemplateMinVersion(
+      new File(engineDirPath, "template.json")) match {
+
       case Left(err) => return Left(err)
       case Right(_) =>
-        compile(buildArgs, pioHome, verbose)
+        compile(buildArgs, pioHome, engineDirPath, verbose)
         info("Looking for an engine...")
-        val jarFiles = jarFilesForScala
+        val jarFiles = jarFilesForScala(engineDirPath)
         if (jarFiles.isEmpty) {
           return logAndFail("No engine found. Your build might have failed. Aborting.")
         }
@@ -176,8 +187,10 @@ object Engine extends EitherLogging {
     pioHome: String,
     verbose: Boolean = false): Expected[(Process, () => Unit)] = {
 
-    Template.verifyTemplateMinVersion(new File("template.json"))
-    RunWorkflow.runWorkflow(wa, sa, pioHome, verbose)
+    val engineDirPath = getEngineDirPath(ea.engineDir)
+    Template.verifyTemplateMinVersion(
+      new File(engineDirPath, "template.json"))
+    RunWorkflow.runWorkflow(wa, sa, pioHome, engineDirPath, verbose)
   }
 
   /** Deploying an engine.
@@ -202,12 +215,14 @@ object Engine extends EitherLogging {
     pioHome: String,
     verbose: Boolean = false): Expected[(Process, () => Unit)] = {
 
-    val verifyResult = Template.verifyTemplateMinVersion(new File("template.json"))
+    val engineDirPath = getEngineDirPath(ea.engineDir)
+    val verifyResult = Template.verifyTemplateMinVersion(
+      new File(engineDirPath, "template.json"))
     if (verifyResult.isLeft) {
       return Left(verifyResult.left.get)
     }
-
-    val ei = Console.getEngineInfo(serverArgs.variantJson)
+    val ei = Console.getEngineInfo(
+      new File(engineDirPath, serverArgs.variantJson.getName))
     val engineInstances = storage.Storage.getMetaDataEngineInstances
     val engineInstance = engineInstanceId map { eid =>
       engineInstances.get(eid)
@@ -216,7 +231,8 @@ object Engine extends EitherLogging {
         ei.engineId, ei.engineVersion, ei.variantId)
     }
     engineInstance map { r =>
-      RunServer.runServer(r.id, serverArgs, sparkArgs, pioHome, verbose)
+      RunServer.runServer(
+        r.id, serverArgs, sparkArgs, pioHome, engineDirPath, verbose)
     } getOrElse {
       engineInstanceId map { eid =>
         logAndFail(s"Invalid engine instance ID ${eid}. Aborting.")
@@ -266,6 +282,7 @@ object Engine extends EitherLogging {
     *         of a running driver
     */
   def run(
+    ea: EngineArgs,
     mainClass: String,
     driverArguments: Seq[String],
     buildArgs: BuildArgs,
@@ -273,13 +290,15 @@ object Engine extends EitherLogging {
     pioHome: String,
     verbose: Boolean): Expected[Process] = {
 
-    compile(buildArgs, pioHome, verbose)
+    val engineDirPath = getEngineDirPath(ea.engineDir)
+
+    compile(buildArgs, pioHome, engineDirPath, verbose)
 
     val extraFiles = WorkflowUtils.thirdPartyConfFiles
-
-    val jarFiles = jarFilesForScala
+    val jarFiles = jarFilesForScala(engineDirPath)
     jarFiles foreach { f => info(s"Found JAR: ${f.getName}") }
     val allJarFiles = jarFiles.map(_.getCanonicalPath)
+
     val cmd = s"${getSparkHome(sparkArgs.sparkHome)}/bin/spark-submit --jars " +
       s"${allJarFiles.mkString(",")} " +
       (if (extraFiles.size > 0) {

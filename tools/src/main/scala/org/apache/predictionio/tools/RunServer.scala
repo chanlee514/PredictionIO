@@ -58,16 +58,17 @@ object RunServer extends Logging {
     serverArgs: ServerArgs,
     sparkArgs: SparkArgs,
     pioHome: String,
+    engineDirPath: String,
     verbose: Boolean = false): Expected[(Process, () => Unit)] = {
 
-    val jarFiles = jarFilesForScala.map(_.toURI) ++
+    val jarFiles = jarFilesForScala(engineDirPath).map(_.toURI) ++
       Option(new File(pioHome, "plugins").listFiles())
         .getOrElse(Array.empty[File]).map(_.toURI)
     val args = Seq(
       "--engineInstanceId",
       engineInstanceId,
       "--engine-variant",
-      serverArgs.variantJson.toURI.toString,
+      engineDirPath + File.separator + serverArgs.variantJson.getName,
       "--ip",
       serverArgs.deploy.ip,
       "--port",

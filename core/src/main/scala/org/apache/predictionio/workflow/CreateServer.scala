@@ -190,7 +190,8 @@ object CreateServer extends Logging {
     engine: Engine[TD, EIN, PD, Q, P, A],
     engineLanguage: EngineLanguage.Value): ActorRef = {
 
-    val engineParams = engine.engineInstanceToEngineParams(engineInstance, sc.jsonExtractor)
+    val engineParams = engine.engineInstanceToEngineParams(
+      engineInstance, sc.jsonExtractor)
 
     val kryo = KryoInstantiator.newKryoInjection
 

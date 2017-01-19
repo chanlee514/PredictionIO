@@ -118,6 +118,10 @@ object Console extends Logging {
         c.copy(engine = c.engine.copy(engineVersion = Some(x)))
       } text("Specify an engine version. Usually used by distributed " +
         "deployment.")
+      opt[String]("engine-dir") abbr("ed") action { (x, c) =>
+        c.copy(engine = c.engine.copy(engineDir = Some(x)))
+      } text("Specify absolute path for engine directory, default to " +
+        "current directory.")
       opt[File]("variant") abbr("v") action { (x, c) =>
         c.copy(workflow = c.workflow.copy(variantJson = x))
       }
@@ -156,7 +160,8 @@ object Console extends Logging {
         )
       note("")
       cmd("build").
-        text("Build an engine at the current directory.").
+        text("Build an engine at the specific directory, or current " +
+          "directory by default.").
         action { (_, c) =>
           c.copy(commands = c.commands :+ "build")
         } children(
@@ -178,7 +183,8 @@ object Console extends Logging {
         )
       note("")
       cmd("unregister").
-        text("Unregister an engine at the current directory.").
+        text("Unregister an engine at the specific directory, or current " +
+          "directory by default.").
         action { (_, c) =>
           c.copy(commands = c.commands :+ "unregister")
         }
@@ -630,7 +636,7 @@ object Console extends Logging {
           Pio.version()
         case Seq("build") =>
           Pio.build(
-            ca.build, ca.pioHome.get, ca.verbose)
+            ca.engine, ca.build, ca.pioHome.get, ca.verbose)
         case Seq("train") =>
           Pio.train(
             ca.engine, ca.workflow, ca.spark, ca.pioHome.get, ca.verbose)
@@ -661,6 +667,7 @@ object Console extends Logging {
           Pio.adminserver(ca.adminServer)
         case Seq("run") =>
           Pio.run(
+            ca.engine,
             ca.mainClass.get,
             ca.driverPassThrough,
             ca.build,
