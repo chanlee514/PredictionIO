@@ -153,8 +153,8 @@ class QuickStartTest(BaseTestCase):
     self.app.build()
     self.log.info("Training...")
     self.app.train()
-    self.log.info("Deploying and waiting 15s for it to start...")
-    self.app.deploy(wait_time=15)
+    self.log.info("Deploying and waiting 35s for it to start...")
+    self.app.deploy(wait_time=35)
 
     self.log.info("Testing pio commands outside of engine directory")
     self.engine_dir_test()

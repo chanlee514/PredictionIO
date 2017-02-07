@@ -15,23 +15,27 @@
  * limitations under the License.
  */
 
-
 package org.apache.predictionio.data.storage.jdbc
 
 import java.sql.{DriverManager, ResultSet}
 
 import com.github.nscala_time.time.Imports._
-import org.apache.predictionio.data.storage.{DataMap, Event, PEvents, StorageClientConfig}
+import org.apache.predictionio.data.storage.{
+  DataMap, Event, PEvents, StorageClientConfig}
+import org.apache.predictionio.data.SparkVersionDependent
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.{JdbcRDD, RDD}
-import org.apache.spark.sql.{SQLContext, SaveMode}
+import org.apache.spark.sql.SaveMode
 import org.json4s.JObject
 import org.json4s.native.Serialization
 import scalikejdbc._
 
 /** JDBC implementation of [[PEvents]] */
-class JDBCPEvents(client: String, config: StorageClientConfig, namespace: String) extends PEvents {
+class JDBCPEvents(
+  client: String, config: StorageClientConfig, namespace: String) extends PEvents {
+
   @transient private implicit lazy val formats = org.json4s.DefaultFormats
+
   def find(
     appId: Int,
     channelId: Option[Int] = None,
@@ -42,6 +46,7 @@ class JDBCPEvents(client: String, config: StorageClientConfig, namespace: String
     eventNames: Option[Seq[String]] = None,
     targetEntityType: Option[Option[String]] = None,
     targetEntityId: Option[Option[String]] = None)(sc: SparkContext): RDD[Event] = {
+
     val lower = startTime.map(_.getMillis).getOrElse(0.toLong)
     /** Change the default upper bound from +100 to +1 year because MySQL's
       * FROM_UNIXTIME(t) will return NULL if we use +100 years.
@@ -118,13 +123,12 @@ class JDBCPEvents(client: String, config: StorageClientConfig, namespace: String
   }
 
   def write(events: RDD[Event], appId: Int, channelId: Option[Int])(sc: SparkContext): Unit = {
-    val sqlContext = new SQLContext(sc)
-
-    import sqlContext.implicits._
+    val sqlSession = SparkVersionDependent.sqlSession(sc)
+    import sqlSession.implicits._
 
     val tableName = JDBCUtils.eventTableName(namespace, appId, channelId)
 
-    val eventTableColumns = Seq[String](
+    val eventsColumnNamesInDF = Seq[String](
         "id"
       , "event"
       , "entityType"
@@ -138,6 +142,13 @@ class JDBCPEvents(client: String, config: StorageClientConfig, namespace: String
       , "prId"
       , "creationTime"
       , "creationTimeZone")
+
+    // Necessary for handling postgres "case-sensitivity"
+    val eventsColumnNamesInSQL =
+    JDBCUtils.driverType(client) match {
+      case "postgresql" => eventsColumnNamesInDF.map(_.toLowerCase)
+      case _ => eventsColumnNamesInDF
+    }
 
     val eventDF = events.map(x =>
                               Event(eventId = None, event = x.event, entityType = x.entityType,
@@ -160,7 +171,7 @@ class JDBCPEvents(client: String, config: StorageClientConfig, namespace: String
         , event.prId
         , new java.sql.Timestamp(event.creationTime.getMillis)
         , event.creationTime.getZone.getID)
-    }.toDF(eventTableColumns:_*)
+    }.toDF(eventsColumnNamesInSQL:_*)
 
     // spark version 1.4.0 or higher
     val prop = new java.util.Properties
