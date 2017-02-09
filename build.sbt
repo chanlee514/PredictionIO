@@ -122,8 +122,7 @@ def coreClasses(baseDirectory: java.io.File, scalaVersion: String) = Seq(
 
 val conf = file(".") / "conf"
 
-val commonSettings = Seq(
-  autoAPIMappings := true)
+val commonSettings = Seq(autoAPIMappings := true)
 
 val common = (project in file("common")).
   settings(commonSettings: _*).
