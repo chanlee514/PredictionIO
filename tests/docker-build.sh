@@ -43,4 +43,4 @@ docker build -t $1 ./tests \
   --build-arg ELASTICSEARCH_VERSION=$ELASTICSEARCH_VERSION \
   --build-arg HBASE_VERSION=$HBASE_VERSION
 
-rm -fr ./tests/docker-files/vendors.sh
+rm ./tests/docker-files/vendors.sh

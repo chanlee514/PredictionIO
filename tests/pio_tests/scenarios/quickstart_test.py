@@ -89,8 +89,8 @@ class QuickStartTest(BaseTestCase):
     self.app.build(engine_dir=engine_path)
     self.log.info("Training...")
     self.app.train(engine_dir=engine_path)
-    self.log.info("Deploying and waiting 15s for it to start...")
-    self.app.deploy(wait_time=15, engine_dir=engine_path)
+    self.log.info("Deploying and waiting 30s for it to start...")
+    self.app.deploy(wait_time=30, engine_dir=engine_path)
 
     self.log.info("Sending a single query and checking results")
     user_query = { "user": 1, "num": 4 }

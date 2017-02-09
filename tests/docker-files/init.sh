@@ -19,7 +19,7 @@
 set -e
 
 echo '== Copying distribution to PIO_HOME... =='
-DISTRIBUTION_TAR=`find /pio_host -maxdepth 1 -name PredictionIO*SNAPSHOT.tar.gz | head -1`
+DISTRIBUTION_TAR=`find /pio_host -maxdepth 1 -name PredictionIO-*.tar.gz | head -1`
 tar zxvfC $DISTRIBUTION_TAR /
 DIR_NAME=/`basename $DISTRIBUTION_TAR`
 DIR_NAME=${DIR_NAME%.tar.gz}
@@ -64,14 +64,6 @@ $SPARK_HOME/sbin/start-all.sh
 
 echo '== Starting Elasticsearch... =='
 $ELASTICSEARCH_HOME/bin/elasticsearch -d -p $PIO_HOME/es.pid
-
-echo '== Copying distribution to PIO_HOME... =='
-DISTRIBUTION_TAR=`find /pio_host -maxdepth 1 -name PredictionIO-*.tar.gz | head -1`
-tar zxvfC $DISTRIBUTION_TAR /
-DIR_NAME=/`basename $DISTRIBUTION_TAR`
-DIR_NAME=${DIR_NAME%.tar.gz}
-mv $DIR_NAME/* $PIO_HOME/
-mv /pio-env.sh $PIO_HOME/conf/pio-env.sh
 
 echo '== Copying tests to a separate directory =='
 mkdir /tests

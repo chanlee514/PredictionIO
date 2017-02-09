@@ -36,7 +36,7 @@ lazy val profiles: Map[String, Profile] =
       akkaVersion="2.4.10",
       elasticsearchVersion="1.4.4"))
 
-lazy val defaultProfile = "scala-2.11"
+lazy val defaultProfile = "scala-2.10"
 
 buildProfile := {
   val profileName = sys.props.get("build.profile").getOrElse(defaultProfile)
@@ -107,10 +107,22 @@ val pioBuildInfoSettings = buildInfoSettings ++ Seq(
     elasticsearchVersion),
   buildInfoPackage := "org.apache.predictionio.core")
 
+// Used temporarily to modify genjavadoc version to "0.10" until unidoc updates it
+val genjavadocSettings: Seq[sbt.Def.Setting[_]] = Seq(
+  libraryDependencies += compilerPlugin("com.typesafe.genjavadoc" %% "genjavadoc-plugin" % "0.10" cross CrossVersion.full),
+    scalacOptions <+= target map (t => "-P:genjavadoc:out=" + (t / "java")))
+
+// Paths specified below are required for the tests, since thread pools initialized
+// in unit tests of data subproject are used later in spark jobs executed in core.
+// They need to have properly configured classloaders to load core classes for spark
+// in subsequent tests.
+def coreClasses(baseDirectory: java.io.File, scalaVersion: String) = Seq(
+  baseDirectory / s"../core/target/scala-${versionPrefix(scalaVersion)}/classes",
+  baseDirectory / s"../core/target/scala-${versionPrefix(scalaVersion)}/test-classes")
+
 val conf = file(".") / "conf"
 
-val commonSettings = Seq(
-  autoAPIMappings := true)
+val commonSettings = Seq(autoAPIMappings := true)
 
 val common = (project in file("common")).
   settings(commonSettings: _*).
@@ -121,7 +133,10 @@ val data = (project in file("data")).
   dependsOn(common).
   settings(commonSettings: _*).
   settings(genjavadocSettings: _*).
-  settings(unmanagedClasspath in Test += conf)
+  settings(unmanagedClasspath in Test += conf).
+  settings(unmanagedSourceDirectories in Compile +=
+    sourceDirectory.value / s"main/spark-${versionMajor(sparkVersion.value)}").
+  settings(fullClasspath in Test ++= coreClasses(baseDirectory.value, scalaVersion.value))
 
 val core = (project in file("core")).
   dependsOn(data).
