@@ -18,32 +18,31 @@
 
 set -e
 
+if [[ "$#" -ne 1 ]]; then
+  echo "Usage: docker-build.sh <image-name>"
+  exit 1
+fi
+
+cd `dirname $(dirname $0)`
+
+source ./dev/set-build-profile.sh scala-2.10
+SPARK_VERSION_OLD=$SPARK_VERSION
+HADOOP_VERSION_OLD=$HADOOP_VERSION
+ELASTICSEARCH_VERSION_OLD=$ELASTICSEARCH_VERSION
+
+source ./dev/set-build-profile.sh scala-2.11
+
 HBASE_VERSION=1.0.0
 
-if [[ $BUILD_TYPE == Unit ]]; then
-  # Download spark, hbase
-  mkdir vendors
-  set -a
-  source dev/set-build-profile.sh $BUILD_PROFILE
-  source conf/vendors.sh
-  set +a
+cp ./conf/vendors.sh ./tests/docker-files/
 
-  dev/retry_command.sh wget $SPARK_DOWNLOAD
-  tar zxfC $SPARK_ARCHIVE vendors
-  export SPARK_HOME=`pwd`/vendors/$SPARK_DIRNAME
+docker build -t $1 ./tests \
+  --build-arg SPARK_VERSION=$SPARK_VERSION \
+  --build-arg SPARK_VERSION_OLD=$SPARK_VERSION_OLD \
+  --build-arg HADOOP_VERSION=$HADOOP_VERSION \
+  --build-arg HADOOP_VERSION_OLD=$HADOOP_VERSION_OLD \
+  --build-arg ELASTICSEARCH_VERSION=$ELASTICSEARCH_VERSION \
+  --build-arg ELASTICSEARCH_VERSION_OLD=$ELASTICSEARCH_VERSION_OLD \
+  --build-arg HBASE_VERSION=$HBASE_VERSION
 
-  dev/retry_command.sh wget $HBASE_DOWNLOAD
-  tar zxfC $HBASE_ARCHIVE vendors
-  export HBASE_HOME=`pwd`/vendors/$HBASE_DIRNAME
-  # Prepare pio environment variables
-  set -a
-  source conf/pio-env.sh.travis
-  set +a
-
-  # Create postgres database for PredictionIO
-  psql -c 'create database predictionio;' -U postgres
-  ./bin/travis/pio-start-travis
-
-else # Integration Tests
-  dev/retry_command.sh ./make-distribution.sh -Dbuild.profile=$BUILD_PROFILE
-fi
+rm ./tests/docker-files/vendors.sh

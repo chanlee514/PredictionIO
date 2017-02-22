@@ -215,7 +215,10 @@ object Storage extends Logging {
   private def getClient(
     clientConfig: StorageClientConfig,
     pkg: String): BaseStorageClient = {
-    val className = "org.apache.predictionio.data.storage." + pkg + ".StorageClient"
+    val className = ("org.apache.predictionio.data.storage." + pkg +
+      ".StorageClient").replaceFirst("elasticsearch", "elasticsearch5")
+    // println("**** ", className)
+    // TODO: Change classpath for elasticsearch 5
     try {
       Class.forName(className).getConstructors()(0).newInstance(clientConfig).
         asInstanceOf[BaseStorageClient]
@@ -287,7 +290,10 @@ object Storage extends Logging {
     val classPrefix = clientMeta.client.prefix
     val originalClassName = tag.tpe.toString.split('.')
     val rawClassName = sourceType + "." + classPrefix + originalClassName.last
-    val className = "org.apache.predictionio.data.storage." + rawClassName
+    val className = ("org.apache.predictionio.data.storage." +
+      rawClassName).replaceFirst("elasticsearch", "elasticsearch5")
+    // println("**** ", className)
+    // TODO:  Change classpath for elasticsearch 5
     val clazz = try {
       Class.forName(className)
     } catch {

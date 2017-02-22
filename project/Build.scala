@@ -18,20 +18,41 @@
 import sbt._
 import Keys._
 
+case class Profile(
+  name: String,
+  scalaVersion: String,
+  sparkVersion: String,
+  hadoopVersion: String,
+  akkaVersion: String,
+  elasticsearchVersion: String)
+
 object PIOBuild extends Build {
-  val elasticsearch5Version = SettingKey[String](
-    "elasticsearch5-version",
-    "The version of Elasticsearch 5.x used for building.")
   val elasticsearchVersion = SettingKey[String](
     "elasticsearch-version",
-    "The version of Elasticsearch 1.x used for building.")
+    "The version of Elasticsearch used for building.")
   val json4sVersion = SettingKey[String](
     "json4s-version",
     "The version of JSON4S used for building.")
   val sparkVersion = SettingKey[String](
     "spark-version",
     "The version of Apache Spark used for building.")
+  val hadoopVersion = SettingKey[String](
+    "hadoop-version",
+    "The version of Apache Hadoop used for building")
+  val akkaVersion = SettingKey[String](
+    "akka-version",
+    "The version of Akka used for building")
+  val buildProfile = SettingKey[Profile](
+    "build-profile",
+    "The dependency profile used for the build")
   val childrenPomExtra = SettingKey[scala.xml.NodeSeq](
     "children-pom-extra",
     "Extra POM data for children projects.")
+
+  def versionPrefix(versionString: String) =
+    versionString.split('.').take(2).mkString(".")
+  def versionMajor(versionString: String) = versionString.split('.')(0).toInt
+  def versionMinor(versionString: String) = versionString.split('.')(1).toInt
+
+  lazy val printProfile = taskKey[Unit]("Print settings for the chosen profile")
 }
