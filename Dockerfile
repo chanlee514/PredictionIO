@@ -1,4 +1,3 @@
-#!/bin/bash
 #
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
@@ -16,17 +15,14 @@
 # limitations under the License.
 #
 
-# This script reads specification of the chosen profile from sbt config
-# and exports variables with versions of the dependencies, e.g:
-# SPARK_VERSION=2.0.0
+# WARNING: THIS DOCKERFILE IS NOT INTENDED FOR PRODUCTION USE OR DEPLOYMENT. AT
+#          THIS POINT, THIS IS ONLY INTENDED FOR USE IN AUTOMATED TESTS. IF YOU
+#          ARE LOOKING TO DEPLOY PREDICTIONIO WITH DOCKER, PLEASE REFER TO
+#          http://predictionio.incubator.apache.org/community/projects/#docker-installation-for-predictionio
 
-set -e
+FROM predictionio/pio-testing-base
 
-if [[ "$#" -ne 1 ]]; then
-  echo "Usage: set-build-profile.sh <build-profile>"
-  exit 1
-fi
-
-set -a
-eval `sbt --warn --error 'set showSuccess := false' -Dbuild.profile=$1 printProfile | grep '.*_VERSION=.*'`
-set +a
+# Include the entire code tree
+ENV PIO_HOME /PredictionIO
+ENV PATH ${PIO_HOME}/bin/:${PATH}
+ADD . ${PIO_HOME}

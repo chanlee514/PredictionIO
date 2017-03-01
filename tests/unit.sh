@@ -16,8 +16,20 @@
 # limitations under the License.
 #
 
-set -e
-export PYTHONPATH=/$PIO_HOME/tests:$PYTHONPATH
-echo "Sleeping $SLEEP_TIME seconds for all services to be ready..."
-sleep $SLEEP_TIME
-eval $@
+pushd /PredictionIO
+
+# Run license check
+./tests/check_license.sh
+
+# Prepare pio environment variables
+set -a
+source ./conf/pio-env.sh
+set +a
+
+# Run stylecheck
+sbt/sbt -Dbuild.profile=$BUILD_PROFILE scalastyle
+
+# Run all unit tests
+sbt/sbt -Dbuild.profile=$BUILD_PROFILE test
+
+popd

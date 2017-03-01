@@ -31,7 +31,7 @@ lazy val profiles: Map[String, Profile] =
     "scala-2.11" -> Profile(
       name="scala-2.11",
       scalaVersion="2.11.8",
-      sparkVersion="2.0.0",
+      sparkVersion="2.0.2",
       hadoopVersion="2.7.3",
       akkaVersion="2.4.10",
       elasticsearchVersion="1.4.4"))
@@ -120,31 +120,29 @@ def coreClasses(baseDirectory: java.io.File, scalaVersion: String) = Seq(
   baseDirectory / s"../core/target/scala-${versionPrefix(scalaVersion)}/classes",
   baseDirectory / s"../core/target/scala-${versionPrefix(scalaVersion)}/test-classes")
 
-val conf = file(".") / "conf"
+val conf = file("conf")
 
-val commonSettings = Seq(autoAPIMappings := true)
+val commonSettings = Seq(
+  autoAPIMappings := true,
+  unmanagedClasspath in Test += conf)
 
 val common = (project in file("common")).
   settings(commonSettings: _*).
-  settings(genjavadocSettings: _*).
-  settings(unmanagedClasspath in Test += conf)
+  settings(genjavadocSettings: _*)
 
 val data = (project in file("data")).
   dependsOn(common).
   settings(commonSettings: _*).
   settings(genjavadocSettings: _*).
-  settings(unmanagedClasspath in Test += conf).
   settings(unmanagedSourceDirectories in Compile +=
-    sourceDirectory.value / s"main/spark-${versionMajor(sparkVersion.value)}").
-  settings(fullClasspath in Test ++= coreClasses(baseDirectory.value, scalaVersion.value))
+    sourceDirectory.value / s"main/spark-${versionMajor(sparkVersion.value)}")
 
 val core = (project in file("core")).
   dependsOn(data).
   settings(commonSettings: _*).
   settings(genjavadocSettings: _*).
   settings(pioBuildInfoSettings: _*).
-  enablePlugins(SbtTwirl).
-  settings(unmanagedClasspath in Test += conf)
+  enablePlugins(SbtTwirl)
 
 val tools = (project in file("tools")).
   dependsOn(core).
@@ -152,13 +150,11 @@ val tools = (project in file("tools")).
   settings(commonSettings: _*).
   settings(genjavadocSettings: _*).
   enablePlugins(SbtTwirl).
-  settings(unmanagedClasspath in Test += conf).
   settings(fullClasspath in Test ++= coreClasses(baseDirectory.value, scalaVersion.value))
 
 val e2 = (project in file("e2")).
   settings(commonSettings: _*).
   settings(genjavadocSettings: _*).
-  settings(unmanagedClasspath in Test += conf).
   settings(fullClasspath in Test ++= coreClasses(baseDirectory.value, scalaVersion.value))
 
 val root = (project in file(".")).
@@ -285,10 +281,10 @@ testOptions in Test += Tests.Argument("-oDF")
 
 printProfile := {
   val profile = buildProfile.value
-  println(s"PROFILE_NAME=${profile.name}")
-  println(s"SCALA_VERSION=${profile.scalaVersion}")
-  println(s"SPARK_VERSION=${profile.sparkVersion}")
-  println(s"HADOOP_VERSION=${profile.hadoopVersion}")
-  println(s"AKKA_VERSION=${profile.akkaVersion}")
-  println(s"ELASTICSEARCH_VERSION=${profile.elasticsearchVersion}")
+  println(s"PIO_PROFILE_VERSION=${profile.name}")
+  println(s"PIO_SCALA_VERSION=${profile.scalaVersion}")
+  println(s"PIO_SPARK_VERSION=${profile.sparkVersion}")
+  println(s"PIO_HADOOP_VERSION=${profile.hadoopVersion}")
+  println(s"PIO_AKKA_VERSION=${profile.akkaVersion}")
+  println(s"PIO_ELASTICSEARCH_VERSION=${profile.elasticsearchVersion}")
 }

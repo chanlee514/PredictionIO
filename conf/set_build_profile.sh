@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -
 #
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
@@ -16,31 +16,16 @@
 # limitations under the License.
 #
 
+# Sets version of profile dependencies from sbt configuration.
+# eg. Run `source ./set_build_profile.sh scala-2.11`
+
 set -e
 
 if [[ "$#" -ne 1 ]]; then
-  echo "Usage: docker-build.sh <image-name>"
+  echo "Usage: set-build-profile.sh <build-profile>"
   exit 1
 fi
 
-cd `dirname $(dirname $0)`
-
-source ./dev/set-build-profile.sh scala-2.10
-SPARK_VERSION_OLD=$SPARK_VERSION
-HADOOP_VERSION_OLD=$HADOOP_VERSION
-
-source ./dev/set-build-profile.sh scala-2.11
-
-HBASE_VERSION=1.0.0
-
-cp ./conf/vendors.sh ./tests/docker-files/
-
-docker build -t $1 ./tests \
-  --build-arg SPARK_VERSION=$SPARK_VERSION \
-  --build-arg SPARK_VERSION_OLD=$SPARK_VERSION_OLD \
-  --build-arg HADOOP_VERSION=$HADOOP_VERSION \
-  --build-arg HADOOP_VERSION_OLD=$HADOOP_VERSION_OLD \
-  --build-arg ELASTICSEARCH_VERSION=$ELASTICSEARCH_VERSION \
-  --build-arg HBASE_VERSION=$HBASE_VERSION
-
-rm ./tests/docker-files/vendors.sh
+set -a
+eval `sbt/sbt --error 'set showSuccess := false' -Dbuild.profile=$1 printProfile | grep '.*_VERSION=.*'`
+set +a

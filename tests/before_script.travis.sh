@@ -16,34 +16,4 @@
 # limitations under the License.
 #
 
-set -e
-
-HBASE_VERSION=1.0.0
-
-if [[ $BUILD_TYPE == Unit ]]; then
-  # Download spark, hbase
-  mkdir vendors
-  set -a
-  source dev/set-build-profile.sh $BUILD_PROFILE
-  source conf/vendors.sh
-  set +a
-
-  dev/retry_command.sh wget $SPARK_DOWNLOAD
-  tar zxfC $SPARK_ARCHIVE vendors
-  export SPARK_HOME=`pwd`/vendors/$SPARK_DIRNAME
-
-  dev/retry_command.sh wget $HBASE_DOWNLOAD
-  tar zxfC $HBASE_ARCHIVE vendors
-  export HBASE_HOME=`pwd`/vendors/$HBASE_DIRNAME
-  # Prepare pio environment variables
-  set -a
-  source conf/pio-env.sh.travis
-  set +a
-
-  # Create postgres database for PredictionIO
-  psql -c 'create database predictionio;' -U postgres
-  ./bin/travis/pio-start-travis
-
-else # Integration Tests
-  dev/retry_command.sh ./make-distribution.sh -Dbuild.profile=$BUILD_PROFILE
-fi
+./tests/build_docker.sh
