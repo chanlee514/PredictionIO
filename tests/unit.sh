@@ -27,9 +27,9 @@ source ./conf/pio-env.sh
 set +a
 
 # Run stylecheck
-sbt/sbt -Dbuild.profile=$BUILD_PROFILE scalastyle
+sbt/sbt -Dbuild.profile=$1 scalastyle
 
 # Run all unit tests
-sbt/sbt -Dbuild.profile=$BUILD_PROFILE test
+sbt/sbt -Dbuild.profile=$1 test
 
 popd
