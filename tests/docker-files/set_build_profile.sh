@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -
 #
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
@@ -16,10 +16,16 @@
 # limitations under the License.
 #
 
-if [[ $BUILD_TYPE == Unit ]]; then
-  tests/run_docker.sh $METADATA_REP $EVENTDATA_REP $MODELDATA_REP \
-    "/PredictionIO/tests/unit.sh $BUILD_PROFILE"
-else
-  tests/run_docker.sh $METADATA_REP $EVENTDATA_REP $MODELDATA_REP \
-    "python3 /PredictionIO/tests/pio_tests/tests.py"
+# Sets version of profile dependencies from sbt configuration.
+# eg. Run `source ./set_build_profile.sh scala-2.11`
+
+set -e
+
+if [[ "$#" -ne 1 ]]; then
+  echo "Usage: set-build-profile.sh <build-profile>"
+  exit 1
 fi
+
+set -a
+eval `$PIO_HOME/sbt/sbt --error 'set showSuccess := false' -Dbuild.profile=$1 printProfile | grep '.*_VERSION=.*'`
+set +a

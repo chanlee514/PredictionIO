@@ -28,7 +28,6 @@ cp dist/lib/*.jar assembly/
 
 source conf/set_build_profile.sh ${BUILD_PROFILE}
 source conf/pio-vendors.sh
-
 if [ ! -f $DIR/docker-files/${PGSQL_JAR} ]; then
   wget $PGSQL_DOWNLOAD
   mv ${PGSQL_JAR} $DIR/docker-files/
@@ -43,4 +42,8 @@ popd
 docker build -t predictionio/pio-testing $DIR \
   --build-arg SPARK_ARCHIVE=$SPARK_ARCHIVE \
   --build-arg SPARK_DIR=$SPARK_DIR \
-  --build-arg PGSQL_JAR=$PGSQL_JAR
+  --build-arg PGSQL_JAR=$PGSQL_JAR \
+  --build-arg BUILD_PROFILE=$BUILD_PROFILE \
+  --build-arg PIO_SCALA_VERSION=$PIO_SCALA_VERSION \
+  --build-arg PIO_SPARK_VERSION=$PIO_SPARK_VERSION
+
