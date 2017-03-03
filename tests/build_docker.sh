@@ -18,33 +18,32 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-source $DIR/docker-files/env-conf/vendors-env.sh
+docker pull predictionio/pio-testing-base
 
+pushd $DIR/..
+./make-distribution.sh -Dbuild.profile=${BUILD_PROFILE}
+sbt/sbt clean
+mkdir assembly
+cp dist/lib/*.jar assembly/
+
+source conf/set_build_profile.sh ${BUILD_PROFILE}
+source conf/pio-vendors.sh
 if [ ! -f $DIR/docker-files/${PGSQL_JAR} ]; then
   wget $PGSQL_DOWNLOAD
   mv ${PGSQL_JAR} $DIR/docker-files/
-fi
-
-if [ $BUILD_PROFILE = "scala-2.10" ]; then
-  SPARK_DIR=${OLD_SPARK_DIR}
-  SPARK_DOWNLOAD=${OLD_SPARK_DOWNLOAD}
-  SPARK_ARCHIVE=${OLD_SPARK_ARCHIVE}
 fi
 if [ ! -f $DIR/docker-files/${SPARK_ARCHIVE} ]; then
   wget $SPARK_DOWNLOAD
   mv $SPARK_ARCHIVE $DIR/docker-files/
 fi
 
-docker pull predictionio/pio-testing-base
-pushd $DIR/..
-./make-distribution.sh -Dbuild.profile=${BUILD_PROFILE}
-sbt/sbt clean
-mkdir assembly
-cp dist/lib/*.jar assembly/
-source conf/set_build_profile.sh ${BUILD_PROFILE}
 docker build -t predictionio/pio .
 popd
 docker build -t predictionio/pio-testing $DIR \
   --build-arg SPARK_ARCHIVE=$SPARK_ARCHIVE \
   --build-arg SPARK_DIR=$SPARK_DIR \
-  --build-arg PGSQL_JAR=$PGSQL_JAR
+  --build-arg PGSQL_JAR=$PGSQL_JAR \
+  --build-arg BUILD_PROFILE=$BUILD_PROFILE \
+  --build-arg PIO_SCALA_VERSION=$PIO_SCALA_VERSION \
+  --build-arg PIO_SPARK_VERSION=$PIO_SPARK_VERSION
+

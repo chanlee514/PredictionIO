@@ -16,26 +16,16 @@
 # limitations under the License.
 #
 
-ELASTICSEARCH_VERSION=1.4.4
-HBASE_VERSION=1.0.0
+# IMPORTANT: PIO_*_VERSION for dependencies must be set before envoking this script.
+# `source conf/set_build_profile.sh $BUILD_PROFILE` to get the proper versions
 
 PGSQL_JAR=postgresql-9.4-1204.jdbc41.jar
 PGSQL_DOWNLOAD=https://jdbc.postgresql.org/download/${PGSQL_JAR}
 
-# Build profile scala-2.11
-SPARK_VERSION=2.0.2
-HADOOP_VERSION=2.7.3
-HADOOP_MAJOR=`echo $HADOOP_VERSION | awk -F. '{print $1 "." $2}'`
-SPARK_DIR=spark-${SPARK_VERSION}-bin-hadoop${HADOOP_MAJOR}
+HADOOP_MAJOR=`echo $PIO_HADOOP_VERSION | awk -F. '{print $1 "." $2}'`
+SPARK_DIR=spark-${PIO_SPARK_VERSION}-bin-hadoop${HADOOP_MAJOR}
 SPARK_ARCHIVE=${SPARK_DIR}.tgz
 SPARK_DOWNLOAD=http://d3kbcqa49mib13.cloudfront.net/${SPARK_ARCHIVE}
-# ELASTICSEARCH_DOWNLOAD=https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
-
-# Build profile scala-2.10
-OLD_SPARK_VERSION=1.6.2
-OLD_HADOOP_VERSION=2.6.4
-OLD_HADOOP_MAJOR=`echo $OLD_HADOOP_VERSION | awk -F. '{print $1 "." $2}'`
-OLD_SPARK_DIR=spark-${OLD_SPARK_VERSION}-bin-hadoop${OLD_HADOOP_MAJOR}
-OLD_SPARK_ARCHIVE=${OLD_SPARK_DIR}.tgz
-OLD_SPARK_DOWNLOAD=http://d3kbcqa49mib13.cloudfront.net/${OLD_SPARK_ARCHIVE}
-# OLD_ELASTICSEARCH_DOWNLOAD=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${OLD_ELASTICSEARCH_VERSION}.tar.gz
+# ELASTICSEARCH_DOWNLOAD
+#   5.x https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-${PIO_ELASTICSEARCH_VERSION}.tar.gz
+#   1.x https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${PIO_ELASTICSEARCH_VERSION}.tar.gz

@@ -41,10 +41,14 @@ lazy val defaultProfile = "scala-2.10"
 buildProfile := {
   val profileName = sys.props.get("build.profile").getOrElse(defaultProfile)
   val profile = profiles(profileName)
+  val scalaVersion = profile.scalaVersion
 
   val sparkVersion = sys.props.get("spark.version") map { sv =>
     if ((versionMajor(sv), versionMinor(sv)) < (1, 6)) {
       throw new IllegalArgumentException("Spark versions below 1.6 are no longer supported")
+    } else if (versionMajor(sv) >= 2 &&
+        (versionMajor(scalaVersion), versionMinor(scalaVersion)) < (2, 11)) {
+      throw new IllegalArgumentException("Spark 2.x requires Scala 2.11 and above")
     } else {
       sv
     }
