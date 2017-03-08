@@ -88,13 +88,13 @@ cp ${FWDIR}/conf/* ${DISTDIR}/conf
 cp ${FWDIR}/project/build.properties ${DISTDIR}/project
 cp ${FWDIR}/sbt/sbt ${DISTDIR}/sbt
 cp ${FWDIR}/assembly/*assembly*jar ${DISTDIR}/lib
-cp ${FWDIR}/assembly/spark/*jar ${DISTDIR}/lib/spark
+cp ${FWDIR}/assembly/spark/*jar ${DISTDIR}/lib/spark 2>/dev/null || :
 
 if [ "$ES_VERSION" = "5" ]
 then
-    mv ${DISTDIR}/lib/spark/pio-data-elasticsearch1-assembly-*.jar ${DISTDIR}/lib/extra
+    mv ${DISTDIR}/lib/spark/pio-data-elasticsearch1-assembly-*.jar ${DISTDIR}/lib/extra 2>/dev/null || :
 else
-    mv ${DISTDIR}/lib/spark/pio-data-elasticsearch-assembly-*.jar ${DISTDIR}/lib/extra
+    mv ${DISTDIR}/lib/spark/pio-data-elasticsearch-assembly-*.jar ${DISTDIR}/lib/extra 2>/dev/null || :
 fi
 
 rm -f ${DISTDIR}/lib/*javadoc.jar
