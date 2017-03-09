@@ -734,7 +734,7 @@ object Console extends Logging {
     }
   }
 
-  def getEngineInfo(jsonFile: File): EngineInfo = {
+  def getEngineInfo(jsonFile: File, engineDir: String): EngineInfo = {
     // Use engineFactory as engineId
     val variantJson = parse(Source.fromFile(jsonFile).mkString)
     val engineId = variantJson \ "engineFactory" match {
@@ -754,7 +754,6 @@ object Console extends Logging {
     }
 
     // Use hash of engine directory as engineVersion
-    val engineDir = sys.props("user.dir")
     val engineVersion = java.security.MessageDigest.getInstance("SHA-1").
       digest(engineDir.getBytes).map("%02x".format(_)).mkString
 

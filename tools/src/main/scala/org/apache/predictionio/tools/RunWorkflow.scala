@@ -56,15 +56,16 @@ object RunWorkflow extends Logging {
     verbose: Boolean = false): Expected[(Process, () => Unit)] = {
 
     val jarFiles = jarFilesForScala(engineDirPath).map(_.toURI)
-    val variantJson = engineDirPath + File.separator + wa.variantJson.getName
-    val ei = Console.getEngineInfo(new File(variantJson))
+    val ei = Console.getEngineInfo(
+      wa.variantJson,
+      engineDirPath)
     val args = Seq(
       "--engine-id",
       ei.engineId,
       "--engine-version",
       ei.engineVersion,
       "--engine-variant",
-      variantJson,
+      wa.variantJson.toURI.toString,
       "--verbosity",
       wa.verbosity.toString) ++
       wa.engineFactory.map(
