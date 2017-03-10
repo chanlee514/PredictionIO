@@ -120,10 +120,9 @@ object Console extends Logging {
         "deployment.")
       opt[String]("engine-dir") abbr("ed") action { (x, c) =>
         c.copy(engine = c.engine.copy(engineDir = Some(x)))
-      } text("Specify absolute path for engine directory, default to " +
-        "current directory.")
+      } text("Specify path for engine directory, default to current directory.")
       opt[File]("variant") abbr("v") action { (x, c) =>
-        c.copy(workflow = c.workflow.copy(variantJson = x))
+        c.copy(workflow = c.workflow.copy(variantJson = Some(x)))
       }
       opt[File]("sbt") action { (x, c) =>
         c.copy(build = c.build.copy(sbt = Some(x)))
