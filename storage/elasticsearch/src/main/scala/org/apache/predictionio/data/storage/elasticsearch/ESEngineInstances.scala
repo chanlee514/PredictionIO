@@ -44,10 +44,12 @@ class ESEngineInstances(client: ESClient, config: StorageClientConfig, index: St
 
   val restClient = client.open()
   try {
-    ESUtils.createIndex(restClient, index)
+    ESUtils.createIndex(restClient, index,
+      ESUtils.getNumberOfShards(config, index.toUpperCase),
+      ESUtils.getNumberOfReplicas(config, index.toUpperCase))
     val mappingJson =
       (estype ->
-        ("_all" -> ("enabled" -> 0)) ~
+        ("_all" -> ("enabled" -> false)) ~
         ("properties" ->
           ("status" -> ("type" -> "keyword")) ~
           ("startTime" -> ("type" -> "date")) ~

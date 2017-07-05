@@ -100,11 +100,12 @@ object ESUtils {
     query: String,
     size: Int)(
       implicit formats: Formats): Seq[JValue] = {
+    val entity = new NStringEntity(query, ContentType.APPLICATION_JSON)
     val response = client.performRequest(
       "POST",
       s"/$index/$estype/_search",
       Map("size" -> s"${size}"),
-      new StringEntity(query))
+      entity)
     val responseJValue = parse(EntityUtils.toString(response.getEntity))
     val hits = (responseJValue \ "hits" \ "hits").extract[Seq[JValue]]
     hits.map(h => (h \ "_source"))
@@ -140,7 +141,7 @@ object ESUtils {
       if (hits.isEmpty) results
       else {
         val json = ("scroll" -> scrollLife) ~ ("scroll_id" -> scrollId)
-        val scrollBody = new StringEntity(compact(render(json)))
+        val scrollBody = new NStringEntity(compact(render(json)), ContentType.APPLICATION_JSON)
         val response = client.performRequest(
           "POST",
           "/_search/scroll",
@@ -153,11 +154,12 @@ object ESUtils {
       }
     }
 
+    val entity = new NStringEntity(query, ContentType.APPLICATION_JSON)
     val response = client.performRequest(
       "POST",
       s"/$index/$estype/_search",
       Map("scroll" -> scrollLife),
-      new StringEntity(query))
+      entity)
     val responseJValue = parse(EntityUtils.toString(response.getEntity))
     scroll((responseJValue \ "_scroll_id").extract[String],
       (responseJValue \ "hits" \ "hits").extract[Seq[JValue]],
@@ -166,16 +168,23 @@ object ESUtils {
 
   def createIndex(
     client: RestClient,
-    index: String): Unit = {
+    index: String,
+    numberOfShards: Option[Int],
+    numberOfReplicas: Option[Int]): Unit = {
     client.performRequest(
       "HEAD",
       s"/$index",
       Map.empty[String, String].asJava).getStatusLine.getStatusCode match {
         case 404 =>
+          val json = ("settings" ->
+            ("number_of_shards" -> numberOfShards) ~
+            ("number_of_replicas" -> numberOfReplicas))
+          val entity = new NStringEntity(compact(render(json)), ContentType.APPLICATION_JSON)
           client.performRequest(
             "PUT",
             s"/$index",
-            Map.empty[String, String].asJava)
+            Map.empty[String, String].asJava,
+            entity)
         case 200 =>
         case _ =>
           throw new IllegalStateException(s"/$index is invalid.")
@@ -261,5 +270,17 @@ object ESUtils {
     val schemes = config.properties.get("SCHEMES").
       map(_.split(",").toSeq).getOrElse(Seq("http"))
     (hosts, ports, schemes).zipped.map((h, p, s) => new HttpHost(h, p, s))
+  }
+
+  def getNumberOfShards(config: StorageClientConfig, index: String): Option[Int] = {
+    config.properties.get(s"${index}_NUM_OF_SHARDS").map(_.toInt)
+  }
+
+  def getNumberOfReplicas(config: StorageClientConfig, index: String): Option[Int] = {
+    config.properties.get(s"${index}_NUM_OF_REPLICAS").map(_.toInt)
+  }
+
+  def getEventDataRefresh(config: StorageClientConfig): String = {
+    config.properties.getOrElse("EVENTDATA_REFRESH", "true")
   }
 }

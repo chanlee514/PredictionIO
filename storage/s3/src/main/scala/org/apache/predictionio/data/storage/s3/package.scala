@@ -15,17 +15,11 @@
  * limitations under the License.
  */
 
-import AssemblyKeys._
 
-assemblySettings
+package org.apache.predictionio.data.storage
 
-scalaVersion in ThisBuild := sys.env.getOrElse("PIO_SCALA_VERSION", "2.10.5")
-
-name := "template-scala-parallel-recommendation"
-
-organization := "org.apache.predictionio"
-
-libraryDependencies ++= Seq(
-  "org.apache.predictionio" %% "apache-predictionio-core" % "0.11.1-SNAPSHOT" % "provided",
-  "org.apache.spark"        %% "spark-core"    % sys.env.getOrElse("PIO_SPARK_VERSION", "1.6.3") % "provided",
-  "org.apache.spark"        %% "spark-mllib"   % sys.env.getOrElse("PIO_SPARK_VERSION", "1.6.3") % "provided")
+/** AWS S3 implementation of storage traits, supporting model data only
+  *
+  * @group Implementation
+  */
+package object s3 {}

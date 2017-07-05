@@ -17,13 +17,12 @@
 
 import PIOBuild._
 
-name := "apache-predictionio-data-hdfs"
+name := "apache-predictionio-data-s3"
 
 libraryDependencies ++= Seq(
-  "org.apache.hadoop"        % "hadoop-common"            % hadoopVersion.value
-    exclude("commons-beanutils", "*"),
-  "org.apache.hadoop"        % "hadoop-hdfs"              % hadoopVersion.value,
-  "org.apache.predictionio" %% "apache-predictionio-data" % version.value % "provided",
+  "org.apache.predictionio" %% "apache-predictionio-core" % version.value % "provided",
+  "com.google.guava"        % "guava"                     % "14.0.1"      % "provided",
+  "com.amazonaws"           % "aws-java-sdk-s3"           % "1.11.132",
   "org.scalatest"           %% "scalatest"                % "2.1.7" % "test")
 
 parallelExecution in Test := false
@@ -32,9 +31,14 @@ pomExtra := childrenPomExtra.value
 
 assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false)
 
+assemblyShadeRules in assembly := Seq(
+  ShadeRule.rename("org.apache.http.**" -> "shadeio.data.s3.http.@1").inAll,
+  ShadeRule.rename("com.fasterxml.**" -> "shadeio.data.s3.fasterxml.@1").inAll
+)
+
 // skip test in assembly
 test in assembly := {}
 
 assemblyOutputPath in assembly := baseDirectory.value.getAbsoluteFile.getParentFile.getParentFile /
   "assembly" / "src" / "universal" / "lib" / "spark" /
-  ("pio-data-hdfs-assembly-" + version.value + ".jar")
+  s"pio-data-s3-assembly-${version.value}.jar"

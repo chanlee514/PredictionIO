@@ -47,13 +47,13 @@ lazy val scalaSparkDepsVersion = Map(
 
 name := "apache-predictionio-parent"
 
-version in ThisBuild := "0.11.0-SNAPSHOT"
+version in ThisBuild := "0.11.1-SNAPSHOT"
 
 organization in ThisBuild := "org.apache.predictionio"
 
-scalaVersion in ThisBuild := sys.props.getOrElse("scala.version", "2.10.6")
+scalaVersion in ThisBuild := sys.props.getOrElse("scala.version", "2.11.8")
 
-crossScalaVersions in ThisBuild := Seq(scalaVersion.value, "2.11.8")
+crossScalaVersions in ThisBuild := Seq("2.10.6", "2.11.8")
 
 scalacOptions in ThisBuild ++= Seq("-deprecation", "-unchecked", "-feature")
 
@@ -64,7 +64,7 @@ javacOptions in (ThisBuild, compile) ++= Seq("-source", "1.7", "-target", "1.7",
   "-Xlint:deprecation", "-Xlint:unchecked")
 
 // Ignore differentiation of Spark patch levels
-sparkVersion in ThisBuild := sys.props.getOrElse("spark.version", "1.6.3")
+sparkVersion in ThisBuild := sys.props.getOrElse("spark.version", (if (scalaBinaryVersion.value == "2.10") "1.6.3" else "2.1.1"))
 
 sparkBinaryVersion in ThisBuild := binaryVersion(sparkVersion.value)
 
@@ -72,7 +72,7 @@ akkaVersion in ThisBuild := sys.props.getOrElse(
   "akka.version",
   scalaSparkDepsVersion(scalaBinaryVersion.value)(sparkBinaryVersion.value)("akka"))
 
-lazy val es = sys.props.getOrElse("elasticsearch.version", "1.7.6")
+lazy val es = sys.props.getOrElse("elasticsearch.version", "5.4.1")
 
 elasticsearchVersion in ThisBuild := es
 
@@ -83,7 +83,7 @@ hadoopVersion in ThisBuild := sys.props.getOrElse(
   scalaSparkDepsVersion(scalaBinaryVersion.value)(sparkBinaryVersion.value)("hadoop"))
 
 val pioBuildInfoSettings = buildInfoSettings ++ Seq(
-  sourceGenerators in Compile <+= buildInfo,
+  sourceGenerators in Compile += buildInfo,
   buildInfoKeys := Seq[BuildInfoKey](
     name,
     version,
@@ -126,6 +126,10 @@ val dataJdbc = (project in file("storage/jdbc")).
   enablePlugins(GenJavadocPlugin)
 
 val dataLocalfs = (project in file("storage/localfs")).
+  settings(commonSettings: _*).
+  enablePlugins(GenJavadocPlugin)
+
+val dataS3 = (project in file("storage/s3")).
   settings(commonSettings: _*).
   enablePlugins(GenJavadocPlugin)
 
@@ -173,7 +177,8 @@ val storageSubprojects = Seq(
     dataHbase,
     dataHdfs,
     dataJdbc,
-    dataLocalfs)
+    dataLocalfs,
+    dataS3)
 
 val storage = (project in file("storage"))
   .aggregate(storageSubprojects map Project.projectToRef: _*)

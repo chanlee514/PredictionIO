@@ -17,19 +17,10 @@
 # limitations under the License.
 #
 
-SCALA_VERSION=2.10
-
 # Figure out where PredictionIO is installed
 FWDIR="$(cd `dirname $0`/..; pwd)"
 
 . ${FWDIR}/bin/load-pio-env.sh
-
-# Build up classpath
-CLASSPATH="${PIO_CONF_DIR}"
-
-CLASSPATH="$CLASSPATH:${FWDIR}/plugins/*"
-
-ASSEMBLY_DIR="${FWDIR}/assembly/src/universal/lib"
 
 if [ -n "$JAVA_HOME" ]; then
   JAR_CMD="$JAVA_HOME/bin/jar"
@@ -37,24 +28,28 @@ else
   JAR_CMD="jar"
 fi
 
-lib_spark_classpath=''
 # Use pio-assembly JAR from either RELEASE or assembly directory
 if [ -f "${FWDIR}/RELEASE" ]; then
   assembly_folder="${FWDIR}"/lib
-  lib_spark_jars=`ls "${FWDIR}"/lib/spark/*.jar`
 else
-  assembly_folder="${ASSEMBLY_DIR}"
-  lib_spark_jars=`ls "${FWDIR}"/assembly/src/universal/lib/spark/*.jar`
+  assembly_folder="${FWDIR}"/assembly/src/universal/lib
 fi
+
+MAIN_JAR=$(ls "${assembly_folder}"/pio-assembly*.jar 2>/dev/null)
+DATA_JARS=$(ls "${assembly_folder}"/spark/pio-data-*assembly*.jar 2>/dev/null)
+# Comma-separated list of assembly jars for submitting to spark-shell
+ASSEMBLY_JARS=$(printf "${MAIN_JAR}\n${DATA_JARS}" | paste -sd "," -)
+
+# Build up classpath
+CLASSPATH="${PIO_CONF_DIR}"
+CLASSPATH="$CLASSPATH:${FWDIR}/plugins/*"
+CLASSPATH="$CLASSPATH:${MAIN_JAR}"
 # stable classpath for Spark JARs
-for J in $lib_spark_jars; do
+lib_spark_classpath=''
+for J in $DATA_JARS; do
   lib_spark_classpath="${lib_spark_classpath}:${J}"
 done
 CLASSPATH="${CLASSPATH}${lib_spark_classpath}"
-
-ASSEMBLY_JAR=$(ls "${assembly_folder}"/pio-assembly*.jar 2>/dev/null)
-
-CLASSPATH="$CLASSPATH:${ASSEMBLY_JAR}"
 
 # Add hadoop conf dir if given -- otherwise FileSystem.*, etc fail ! Note, this
 # assumes that there is either a HADOOP_CONF_DIR or YARN_CONF_DIR which hosts
@@ -77,6 +72,5 @@ fi
 if [ -n "$MYSQL_JDBC_DRIVER" ]; then
   CLASSPATH="$CLASSPATH:$MYSQL_JDBC_DRIVER"
 fi
-
 
 echo "$CLASSPATH"

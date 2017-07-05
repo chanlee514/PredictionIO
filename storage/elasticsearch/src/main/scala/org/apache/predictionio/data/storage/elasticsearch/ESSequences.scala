@@ -41,31 +41,35 @@ class ESSequences(client: ESClient, config: StorageClientConfig, index: String) 
 
   val restClient = client.open()
   try {
-    ESUtils.createIndex(restClient, index)
+    ESUtils.createIndex(restClient, index,
+      ESUtils.getNumberOfShards(config, index.toUpperCase),
+      ESUtils.getNumberOfReplicas(config, index.toUpperCase))
     val mappingJson =
       (estype ->
-        ("_all" -> ("enabled" -> 0)))
+        ("_all" -> ("enabled" -> false)) ~
+        ("properties" ->
+          ("n" -> ("enabled" -> false))))
     ESUtils.createMapping(restClient, index, estype, compact(render(mappingJson)))
   } finally {
     restClient.close()
   }
 
-  def genNext(name: String): Int = {
+  def genNext(name: String): Long = {
     val restClient = client.open()
     try {
       val entity = new NStringEntity(write("n" -> name), ContentType.APPLICATION_JSON)
       val response = restClient.performRequest(
         "POST",
         s"/$index/$estype/$name",
-        Map("refresh" -> "true").asJava,
+        Map("refresh" -> "false").asJava,
         entity)
       val jsonResponse = parse(EntityUtils.toString(response.getEntity))
       val result = (jsonResponse \ "result").extract[String]
       result match {
         case "created" =>
-          (jsonResponse \ "_version").extract[Int]
+          (jsonResponse \ "_version").extract[Long]
         case "updated" =>
-          (jsonResponse \ "_version").extract[Int]
+          (jsonResponse \ "_version").extract[Long]
         case _ =>
           throw new IllegalStateException(s"[$result] Failed to update $index/$estype/$name")
       }

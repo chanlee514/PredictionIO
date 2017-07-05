@@ -46,10 +46,12 @@ class ESEvaluationInstances(client: ESClient, config: StorageClientConfig, index
 
   val restClient = client.open()
   try {
-    ESUtils.createIndex(restClient, index)
+    ESUtils.createIndex(restClient, index,
+      ESUtils.getNumberOfShards(config, index.toUpperCase),
+      ESUtils.getNumberOfReplicas(config, index.toUpperCase))
     val mappingJson =
       (estype ->
-        ("_all" -> ("enabled" -> 0)) ~
+        ("_all" -> ("enabled" -> false)) ~
         ("properties" ->
           ("status" -> ("type" -> "keyword")) ~
           ("startTime" -> ("type" -> "date")) ~
@@ -57,9 +59,9 @@ class ESEvaluationInstances(client: ESClient, config: StorageClientConfig, index
           ("evaluationClass" -> ("type" -> "keyword")) ~
           ("engineParamsGeneratorClass" -> ("type" -> "keyword")) ~
           ("batch" -> ("type" -> "keyword")) ~
-          ("evaluatorResults" -> ("type" -> "text") ~ ("index" -> "no")) ~
-          ("evaluatorResultsHTML" -> ("type" -> "text") ~ ("index" -> "no")) ~
-          ("evaluatorResultsJSON" -> ("type" -> "text") ~ ("index" -> "no"))))
+          ("evaluatorResults" -> ("type" -> "text")) ~
+          ("evaluatorResultsHTML" -> ("enabled" -> false)) ~
+          ("evaluatorResultsJSON" -> ("enabled" -> false))))
     ESUtils.createMapping(restClient, index, estype, compact(render(mappingJson)))
   } finally {
     restClient.close()
@@ -67,13 +69,17 @@ class ESEvaluationInstances(client: ESClient, config: StorageClientConfig, index
 
   def insert(i: EvaluationInstance): String = {
     val id = i.id match {
-      case x if x.isEmpty =>
-        var roll = seq.genNext(estype).toString
-        while (!get(roll).isEmpty) roll = seq.genNext(estype).toString
-        roll
-      case x => x
+      case v if v.isEmpty =>
+        @scala.annotation.tailrec
+        def generateId: String = {
+          seq.genNext(estype).toString match {
+            case x if !get(x).isEmpty => generateId
+            case x => x
+          }
+        }
+        generateId
+      case v => v
     }
-
     update(i.copy(id = id))
     id
   }
