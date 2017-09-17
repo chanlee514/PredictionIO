@@ -67,6 +67,7 @@ from ASF's Nexus instance.
   credentials += Credentials("Sonatype Nexus Repository Manager", "repository.apache.org", "username_token", "password_token")
   ```
 
+12. `sbt/sbt publishLocal`
 12. `sbt/sbt +publishSigned +storage/publishSigned
 +dataElasticsearch/publishSigned` then close the staged repository on Apache
 Nexus.
@@ -75,19 +76,19 @@ Nexus.
 15. Send out e-mail for voting on PredictionIO dev mailing list.
 
   ```
-  Subject: [VOTE] Apache PredictionIO (incubating) 0.11.0 Release (RC1)
+  Subject: [VOTE] Apache PredictionIO (incubating) 0.13.0 Release (RC1)
 
-  This is the vote for 0.11.0 of Apache PredictionIO (incubating).
+  This is the vote for 0.13.0 of Apache PredictionIO (incubating).
 
   The vote will run for at least 72 hours and will close on Apr 7th, 2017.
 
-  The release candidate artifacts can be downloaded here: https://dist.apache.org/repos/dist/dev/incubator/predictionio/0.11.0-incubating-rc1/
+  The release candidate artifacts can be downloaded here: https://dist.apache.org/repos/dist/dev/incubator/predictionio/0.13.0-rc1/
 
   Test results of RC5 can be found here: https://travis-ci.org/apache/incubator-predictionio/builds/xxx
 
   Maven artifacts are built from the release candidate artifacts above, and are provided as convenience for testing with engine templates. The Maven artifacts are provided at the Maven staging repo here: https://repository.apache.org/content/repositories/orgapachepredictionio-nnnn/
 
-  All JIRAs completed for this release are tagged with 'FixVersion = 0.10.0'. You can view them here: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12320420&version=12337844
+  All JIRAs completed for this release are tagged with 'FixVersion = 0.12.0'. You can view them here: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12320420&version=12337844
 
   The artifacts have been signed with Key : YOUR_KEY_ID
 
