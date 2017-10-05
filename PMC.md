@@ -24,31 +24,31 @@ http://apache.org/dev/openpgp.html#generate-key on how to generate a strong code
 signing key.
 2. Add your public key to the `KEYS` file at the root of the source code tree.
 3. Create a new release branch, with version bumped to the next release version.
-  1. `git checkout -b release/0.11.0`
-  2. Replace all `0.11.0-SNAPSHOT` in the code tree to `0.11.0-incubating`.
-  3. `git commit -am "Prepare 0.11.0-incubating-rc1"`
-  4. `git tag -am "Apache PredictionIO 0.11.0-rc1" v0.11.0-incubating-rc1`
+  1. `git checkout -b release/0.13.0`
+  2. Replace all `0.13.0-SNAPSHOT` in the code tree to `0.13.0`.
+  3. `git commit -am "Prepare 0.13.0-rc1"`
+  4. `git tag -am "Apache PredictionIO 0.13.0-rc1" v0.13.0-rc1`
 4. If you have not done so, use SVN to checkout
 https://dist.apache.org/repos/dist/dev/incubator/predictionio. This is the area
 for staging release candidates for voting.
   1. `svn co https://dist.apache.org/repos/dist/dev/incubator/predictionio`
 5.  Package a clean tarball for staging a release candidate.
-  1. `git archive --format tar v0.11.0-incubating-rc1 >
-  ../apache-predictionio-0.11.0-incubating-rc1.tar`
-  2. `cd ..; gzip apache-predictionio-0.11.0-incubating-rc1.tar`
+  1. `git archive --format tar v0.13.0-rc1 >
+  ../apache-predictionio-0.13.0-rc1.tar`
+  2. `cd ..; gzip apache-predictionio-0.13.0-rc1.tar`
 6. Generate detached signature for the release candidate.
 (http://apache.org/dev/release-signing.html#openpgp-ascii-detach-sig)
-  1. `gpg --armor --output apache-predictionio-0.11.0-incubating-rc1.tar.gz.asc
-  --detach-sig apache-predictionio-0.11.0-incubating-rc1.tar.gz`
+  1. `gpg --armor --output apache-predictionio-0.13.0-rc1.tar.gz.asc
+  --detach-sig apache-predictionio-0.13.0-rc1.tar.gz`
 7. Generate MD5 and SHA512 checksums for the release candidate.
-  1. `gpg --print-md MD5 apache-predictionio-0.11.0-incubating-rc1.tar.gz >
-  apache-predictionio-0.11.0-incubating-rc1.tar.gz.md5`
-  2. `gpg --print-md SHA512 apache-predictionio-0.11.0-incubating-rc1.tar.gz >
-  apache-predictionio-0.11.0-incubating-rc1.tar.gz.sha512`
+  1. `gpg --print-md MD5 apache-predictionio-0.13.0-rc1.tar.gz >
+  apache-predictionio-0.13.0-rc1.tar.gz.md5`
+  2. `gpg --print-md SHA512 apache-predictionio-0.13.0-rc1.tar.gz >
+  apache-predictionio-0.13.0-rc1.tar.gz.sha512`
 8. Create a subdirectory at the SVN staging area. The area should have a `KEYS` file.
-  1. `mkdir apache-predictionio-0.11.0-incubating-rc1`
-  2. `cp apache-predictionio-0.11.0-incubating-rc1.*
-  apache-predictionio-0.11.0-incubating-rc1`
+  1. `mkdir apache-predictionio-0.13.0-rc1`
+  2. `cp apache-predictionio-0.13.0-rc1.*
+  apache-predictionio-0.13.0-rc1`
 9. If you have updated the `KEYS` file, also copy that to the staging area.
 10. `svn commit`
 11. Set up credentials with Apache Nexus using the SBT Sonatype plugin. Put this
@@ -71,17 +71,17 @@ from ASF's Nexus instance.
 +dataElasticsearch/publishSigned` then close the staged repository on Apache
 Nexus.
 13. Wait for Travis to pass build on the release branch.
-14. Tag the release branch with a rc tag, e.g. `0.11.0-incubating-rc1`.
+14. Tag the release branch with a rc tag, e.g. `0.13.0-rc1`.
 15. Send out e-mail for voting on PredictionIO dev mailing list.
 
   ```
-  Subject: [VOTE] Apache PredictionIO 0.11.0 Release (RC1)
+  Subject: [VOTE] Apache PredictionIO 0.13.0 Release (RC1)
 
-  This is the vote for 0.11.0 of Apache PredictionIO.
+  This is the vote for 0.13.0 of Apache PredictionIO.
 
   The vote will run for at least 72 hours and will close on Apr 7th, 2017.
 
-  The release candidate artifacts can be downloaded here: https://dist.apache.org/repos/dist/dev/incubator/predictionio/0.11.0-incubating-rc1/
+  The release candidate artifacts can be downloaded here: https://dist.apache.org/repos/dist/dev/incubator/predictionio/0.13.0-rc1/
 
   Test results of RC5 can be found here: https://travis-ci.org/apache/incubator-predictionio/builds/xxx
 
