@@ -30,8 +30,20 @@ data.versions.pio %>/apache-predictionio-<%= data.versions.pio %>.tar.gz).
 
 Verify this release using [signatures and checksums](https://www.apache.org/
 dist/incubator/predictionio/<%= data.versions.pio %>/) and [project release
-KEYS](https://www.apache.org/dist/incubator/predictionio/KEYS). Refer to
-[instructions](http://httpd.apache.org/download.cgi#verify) on how to verify.
+KEYS](https://www.apache.org/dist/incubator/predictionio/KEYS).
+
+```
+$ gpg --import KEYS
+$ gpg --verify apache-predictionio-<%= data.versions.pio %>.tar.gz.asc apache-predictionio-<%= data.versions.pio %>.tar.gz
+```
+
+You should see something like this.
+
+```
+gpg: Signature made Tue Sep 26 22:55:22 2017 PDT
+gpg:                using RSA key 7E2363D84719A8F4
+gpg: Good signature from "Chan Lee <chanlee@apache.org>" [ultimate]
+```
 
 ## Building
 
