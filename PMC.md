@@ -24,30 +24,30 @@ http://apache.org/dev/openpgp.html#generate-key on how to generate a strong code
 signing key.
 2. Add your public key to the `KEYS` file at the root of the source code tree.
 3. Create a new release branch, with version bumped to the next release version.
-  1. `git checkout -b release/0.13.0`
-  2. Replace all `0.13.0-SNAPSHOT` in the code tree to `0.13.0`.
-  3. `git commit -am "Prepare 0.13.0-rc1"`
-  4. `git tag -am "Apache PredictionIO 0.13.0-rc1" v0.13.0-rc1`
+    * `git checkout -b release/0.13.0`
+    * Replace all `0.13.0-SNAPSHOT` in the code tree to `0.13.0`.
+    * `git commit -am "Prepare 0.13.0-rc1"`
+    * `git tag -am "Apache PredictionIO 0.13.0-rc1" v0.13.0-rc1`
 4. If you have not done so, use SVN to checkout
 https://dist.apache.org/repos/dist/dev/incubator/predictionio. This is the area
 for staging release candidates for voting.
-  1. `svn co https://dist.apache.org/repos/dist/dev/incubator/predictionio`
+     `svn co https://dist.apache.org/repos/dist/dev/incubator/predictionio`
 5.  Package a clean tarball for staging a release candidate.
-  1. `git archive --format tar v0.13.0-rc1 >
+    * `git archive --format tar v0.13.0-rc1 >
   ../apache-predictionio-0.13.0-rc1.tar`
-  2. `cd ..; gzip apache-predictionio-0.13.0-rc1.tar`
+    * `cd ..; gzip apache-predictionio-0.13.0-rc1.tar`
 6. Generate detached signature for the release candidate.
 (http://apache.org/dev/release-signing.html#openpgp-ascii-detach-sig)
-  1. `gpg --armor --output apache-predictionio-0.13.0-rc1.tar.gz.asc
+    * `gpg --armor --output apache-predictionio-0.13.0-rc1.tar.gz.asc
   --detach-sig apache-predictionio-0.13.0-rc1.tar.gz`
 7. Generate MD5 and SHA512 checksums for the release candidate.
-  1. `gpg --print-md MD5 apache-predictionio-0.13.0-rc1.tar.gz >
+    * `gpg --print-md MD5 apache-predictionio-0.13.0-rc1.tar.gz >
   apache-predictionio-0.13.0-rc1.tar.gz.md5`
-  2. `gpg --print-md SHA512 apache-predictionio-0.13.0-rc1.tar.gz >
+    * `gpg --print-md SHA512 apache-predictionio-0.13.0-rc1.tar.gz >
   apache-predictionio-0.13.0-rc1.tar.gz.sha512`
 8. Create a subdirectory at the SVN staging area. The area should have a `KEYS` file.
-  1. `mkdir apache-predictionio-0.13.0-rc1`
-  2. `cp apache-predictionio-0.13.0-rc1.*
+    * `mkdir apache-predictionio-0.13.0-rc1`
+    * `cp apache-predictionio-0.13.0-rc1.*
   apache-predictionio-0.13.0-rc1`
 9. If you have updated the `KEYS` file, also copy that to the staging area.
 10. `svn commit`
