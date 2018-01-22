@@ -45,13 +45,14 @@ for staging release candidates for voting.
   apache-predictionio-0.13.0-rc1.tar.gz.md5`
     * `gpg --print-md SHA512 apache-predictionio-0.13.0-rc1.tar.gz >
   apache-predictionio-0.13.0-rc1.tar.gz.sha512`
-8. Create a subdirectory at the SVN staging area. The area should have a `KEYS` file.
+8. Run `./make-distribution.sh` and repeat steps 5 to 7 to create binary distribution release.
+9. Create a subdirectory at the SVN staging area. The area should have a `KEYS` file.
     * `mkdir apache-predictionio-0.13.0-rc1`
     * `cp apache-predictionio-0.13.0-rc1.*
   apache-predictionio-0.13.0-rc1`
-9. If you have updated the `KEYS` file, also copy that to the staging area.
-10. `svn commit`
-11. Set up credentials with Apache Nexus using the SBT Sonatype plugin. Put this
+10. If you have updated the `KEYS` file, also copy that to the staging area.
+11. `svn commit`
+12. Set up credentials with Apache Nexus using the SBT Sonatype plugin. Put this
 in `~/.sbt/0.13/sonatype.sbt`. You can generate username and password tokens
 from ASF's Nexus instance.
 
@@ -66,13 +67,13 @@ from ASF's Nexus instance.
 
   credentials += Credentials("Sonatype Nexus Repository Manager", "repository.apache.org", "username_token", "password_token")
   ```
-
-12. `sbt/sbt +publishSigned +storage/publishSigned
+13. `sbt/sbt +publishSigned +storage/publishSigned
 +dataElasticsearch/publishSigned` then close the staged repository on Apache
 Nexus.
-13. Wait for Travis to pass build on the release branch.
-14. Tag the release branch with a rc tag, e.g. `0.13.0-rc1`.
-15. Send out e-mail for voting on PredictionIO dev mailing list.
+    * You may need to run `sbt/sbt publishLocal` first to avoid depedency errors.
+14. Wait for Travis to pass build on the release branch.
+15. Tag the release branch with a rc tag, e.g. `0.13.0-rc1`.
+16. Send out e-mail for voting on PredictionIO dev mailing list.
 
   ```
   Subject: [VOTE] Apache PredictionIO 0.13.0 Release (RC1)
@@ -87,12 +88,13 @@ Nexus.
 
   Maven artifacts are built from the release candidate artifacts above, and are provided as convenience for testing with engine templates. The Maven artifacts are provided at the Maven staging repo here: https://repository.apache.org/content/repositories/orgapachepredictionio-nnnn/
 
-  All JIRAs completed for this release are tagged with 'FixVersion = 0.10.0'. You can view them here: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12320420&version=12337844
+  All JIRAs completed for this release are tagged with 'FixVersion = 0.12.0'. You can view them here: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12320420&version=12337844
 
   The artifacts have been signed with Key : YOUR_KEY_ID
 
   Please vote accordingly:
 
-  [ ] +1, accept RC as the official 0.10.0 release
-  [ ] -1, do not accept RC as the official 0.10.0 release because...
+  [ ] +1, accept RC as the official 0.13.0 release
+  [ ] -1, do not accept RC as the official 0.13.0 release because...
   ```
+17. After the vote has been accepted, 
