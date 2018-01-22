@@ -17,6 +17,9 @@ limitations under the License.
 
 # Project Management Committee Documentation
 
+This outlines the steps for a PMC member to create a new release. More details
+and policy guidelines can be found here: http://www.apache.org/dev/release-distribution
+
 ## Release Procedure
 
 1. Generate code signing key if you do not already have one for Apache. Refer to
@@ -97,8 +100,14 @@ Nexus.
   [ ] +1, accept RC as the official 0.13.0 release
   [ ] -1, do not accept RC as the official 0.13.0 release because...
   ```
-17. After the vote has been accepted, use SVN to checkout https://dist.apache.org/repos/dist/release/predictionio/. This is the area for staging actual releases. Repeat steps 5 to 7 for the official release.
-18. Send out an email to the following mailing lists: announce, general, user, dev.
+17. After the vote has been accepted, use SVN to checkout
+https://dist.apache.org/repos/dist/release/predictionio/. This is the area
+for staging actual releases.
+18. Repeat steps 5 to 7 to create the official release, and step 13 to publish it.
+Also, remove old releases from the ASF distribution mirrors.
+19. Document breaking changes in http://predictionio.apache.org/resources/upgrade/.
+20. Update `RELEASE.md`.
+21. Send out an email to the following mailing lists: announce, general, user, dev.
 
   ```
   Subject: [ANNOUNCE] Apache PredictionIO 0.13.0 Release
@@ -127,5 +136,3 @@ Nexus.
   Thanks!
   The Apache PredictionIO Team
   ```
-19. Document breaking changes in http://predictionio.apache.org/resources/upgrade/.
-20. Update `RELEASE.md`.
