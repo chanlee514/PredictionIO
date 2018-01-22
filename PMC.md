@@ -114,7 +114,7 @@ Nexus.
   manage and deploy production-ready predictive services for various kinds
   of machine learning tasks.
 
-  More details regarding Apache PredictionIO (incubating) can be found here:
+  More details regarding Apache PredictionIO can be found here:
   http://predictionio.apache.org/
 
   The release artifacts can be downloaded here:
@@ -127,5 +127,5 @@ Nexus.
   Thanks!
   The Apache PredictionIO Team
   ```
-19. Document breaking changes in http://predictionio.incubator.apache.org/resources/upgrade/
-20. Update `RELEASE.md`
+19. Document breaking changes in http://predictionio.apache.org/resources/upgrade/.
+20. Update `RELEASE.md`.
