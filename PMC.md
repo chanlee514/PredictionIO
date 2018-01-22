@@ -29,9 +29,9 @@ signing key.
     * `git commit -am "Prepare 0.13.0-rc1"`
     * `git tag -am "Apache PredictionIO 0.13.0-rc1" v0.13.0-rc1`
 4. If you have not done so, use SVN to checkout
-https://dist.apache.org/repos/dist/dev/incubator/predictionio. This is the area
+https://dist.apache.org/repos/dist/dev/predictionio. This is the area
 for staging release candidates for voting.
-     `svn co https://dist.apache.org/repos/dist/dev/incubator/predictionio`
+    * `svn co https://dist.apache.org/repos/dist/dev/predictionio`
 5.  Package a clean tarball for staging a release candidate.
     * `git archive --format tar v0.13.0-rc1 >
   ../apache-predictionio-0.13.0-rc1.tar`
@@ -73,7 +73,7 @@ Nexus.
     * You may need to run `sbt/sbt publishLocal` first to avoid depedency errors.
 14. Wait for Travis to pass build on the release branch.
 15. Tag the release branch with a rc tag, e.g. `0.13.0-rc1`.
-16. Send out e-mail for voting on PredictionIO dev mailing list.
+16. Send out email for voting on PredictionIO dev mailing list.
 
   ```
   Subject: [VOTE] Apache PredictionIO 0.13.0 Release (RC1)
@@ -82,13 +82,13 @@ Nexus.
 
   The vote will run for at least 72 hours and will close on Apr 7th, 2017.
 
-  The release candidate artifacts can be downloaded here: https://dist.apache.org/repos/dist/dev/incubator/predictionio/0.13.0-rc1/
+  The release candidate artifacts can be downloaded here: https://dist.apache.org/repos/dist/dev/predictionio/0.13.0-rc1/
 
-  Test results of RC5 can be found here: https://travis-ci.org/apache/incubator-predictionio/builds/xxx
+  Test results of RC5 can be found here: https://travis-ci.org/apache/predictionio/builds/xxx
 
   Maven artifacts are built from the release candidate artifacts above, and are provided as convenience for testing with engine templates. The Maven artifacts are provided at the Maven staging repo here: https://repository.apache.org/content/repositories/orgapachepredictionio-nnnn/
 
-  All JIRAs completed for this release are tagged with 'FixVersion = 0.12.0'. You can view them here: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12320420&version=12337844
+  All JIRAs completed for this release are tagged with 'FixVersion = 0.13.0'. You can view them here: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12320420&version=12337844
 
   The artifacts have been signed with Key : YOUR_KEY_ID
 
@@ -97,4 +97,33 @@ Nexus.
   [ ] +1, accept RC as the official 0.13.0 release
   [ ] -1, do not accept RC as the official 0.13.0 release because...
   ```
-17. After the vote has been accepted, 
+17. After the vote has been accepted, use SVN to checkout https://dist.apache.org/repos/dist/release/predictionio/. This is the area for staging actual releases. Repeat steps 5 to 7 for the official release.
+18. Send out an email to the following mailing lists: announce, general, user, dev.
+
+  ```
+  Subject: [ANNOUNCE] Apache PredictionIO 0.13.0 Release
+
+  The Apache PredictionIO team would like to announce the release of Apache
+  PredictionIO 0.13.0.
+
+  Release notes are here:
+  https://github.com/apache/predictionio/blob/release/0.13.0/RELEASE.md
+
+  Apache PredictionIO is an open source Machine Learning Server built on
+  top of state-of-the-art open source stack, that enables developers to
+  manage and deploy production-ready predictive services for various kinds
+  of machine learning tasks.
+
+  More details regarding Apache PredictionIO (incubating) can be found here:
+  http://predictionio.apache.org/
+
+  The release artifacts can be downloaded here:
+  https://dist.apache.org/repos/dist/release/predictionio/0.13.0/
+
+  All JIRAs completed for this release are tagged with 'FixVersion =
+  0.13.0'; the JIRA release notes can be found here:
+  https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12320420&version=12337844
+
+  Thanks!
+  The Apache PredictionIO Team
+  ```
