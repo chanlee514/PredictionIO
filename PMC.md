@@ -127,3 +127,5 @@ Nexus.
   Thanks!
   The Apache PredictionIO Team
   ```
+19. Document breaking changes in http://predictionio.incubator.apache.org/resources/upgrade/
+20. Update `RELEASE.md`
